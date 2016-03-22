@@ -1,0 +1,380 @@
+// reset
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+  background transparent
+  border 0
+  font-weight normal
+  font-size 100%
+  margin 0
+  outline 0
+  padding 0
+  vertical-align baseline
+
+body
+  line-height: 1;
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section
+  display block
+
+ul
+  list-style none
+
+blockquote, q
+  quotes none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+  content none
+
+a
+  background transparent
+  font-size 100%
+  margin 0
+  padding 0
+  vertical-align baseline
+
+ins
+  background-color #ff9
+  color #000
+  text-decoration none
+
+mark
+  background-color #ff9
+  color #000
+  font-style italic
+  font-weight 700
+
+del
+  text-decoration line-through
+
+abbr[title], dfn[title]
+  border-bottom 1px dotted
+  cursor help
+
+table
+  border-collapse collapse
+  border-spacing 0
+
+hr
+  border 0
+  border-top 1px solid #ccc
+  display block
+  height 1px
+  margin 1em 0
+  padding 0
+
+input, select
+  vertical-align middle
+
+clearfix()
+  zoom 1
+  &:after
+    content ""
+    display block
+    clear both
+    height 0
+
+//////////////////////////////////////////////////////////////////////
+
+// fsize = Font Size
+// L = タイトル
+// M = 本文
+// S = リスト( クレジットなど )
+//
+// lheight, lwidth = Letter Size, 文字サイズ
+// 実際のpx数。marginも等幅になるように指定ため
+// font=Menloで計算.
+// H: 高さ。font sizeと同じ
+// W: 幅。font sizeより小さい（文字が縦長のため） + letter-spacing
+
+$font_size_l = 17px
+$letter_space_l = 2px
+$letter_height_l = 17px
+$letter_width_l = 10px + $letter_space_l
+
+$font_size_m = 17px
+$letter_space_m = 2px
+$letter_height_m = 17px
+$letter_width_m = 10px + $letter_space_m
+
+$font_size_s = 14px
+$letter_space_s = 1px
+$letter_height_s = 14px
+$letter_width_s = 8px + $letter_space_s
+
+$color_over = #6dffe4
+
+*::selection
+  background #6dffe4
+
+body
+  line-height $letter_height_m * 1.1
+  font-size $font_size_m
+  letter-spacing $letter_space_m
+  font-family 'Source Code Pro', "Osaka-Mono", "ＭＳ ゴシック", "monospace";
+  font-weight 500
+  text-rendering optimizeLegibility
+  -webkit-font-smoothing antialiased
+
+#block
+  width 840px
+  margin 0 auto
+  padding 0 0($letter_height_m * 3)
+
+// header
+
+header
+  position relative
+  margin ($font_size_m * 2) 0($font_size_m * 3)
+  a
+    color #000
+    text-decoration none
+    .pointer
+      color #bbbbbb
+    &:hover
+      color $color_over
+  nav
+    margin ($font_size_m * 2) 0
+    a
+      margin 0 $font_size_m
+      &:first-child
+        margin-left 0
+  .mark
+    position absolute
+    right 0
+    top -6px
+    display block
+    &:hover
+      svg .st0
+        fill:$color_over
+    svg
+      display block
+      width 32px
+      height 32px
+      .st0
+        fill:#000000
+
+
+//
+// top
+//
+ul.works.large
+  li
+    clear both
+    position relative
+    margin-top $font_size_m
+    width 840px
+  a
+    color #fff
+    display block
+    &:hover
+      color $color_over
+  img
+    width 100%
+    display block
+  p
+    font-size $font_size_l
+    letter-spacing $letter_space_l
+    line-height ($letter_height_l * 1.8)
+    top 10px
+    left 20px
+    position absolute
+    text-decoration underline
+
+ul.works.small
+  clearfix();
+  li
+    width 410px
+    margin ($letter_height_m * 2) 20px 0 0
+    float left
+    &:nth-child(1), &:nth-child(2)
+      margin-top $letter_height_m
+
+    &:nth-child(2n)
+      margin-right 0
+  a
+    color #000
+    display block
+    &:hover
+      color $color_over
+  img
+    width 100%
+    display block
+  p
+    text-align center
+    margin-top $font_size_m
+    font-size $font_size_m
+    line-height $letter_height_m * 2
+
+//
+// work
+//
+.work
+  .visual
+    .picture, .video
+      width 100%
+      margin-top $letter_height_m
+      display block
+      &:first-child
+        margin-top 0
+  .info
+    margin $letter_height_m 0 $letter_height_m
+    border solid 4px #000
+    padding ($letter_height_m *1.5) ($letter_width_m * 2) ($letter_height_m *2) // 1.5=.dateのline-heightを考慮
+    >h1
+      font-weight 700
+      font-size $font_size_l
+      line-height $font_size_l * 2
+      letter-spacing $letter_space_l
+  .date
+    margin $letter_height_m * 2 0 0
+    font-size: $font_size_m
+  .texts
+    text-align justify
+    margin $letter_height_m 0 0
+    line-height $font_size_m * 2
+    .jp
+      color #111
+      margin-top $letter_height_m * 1.5
+    a
+      color #000
+      &:hover
+        color $color_over
+
+  .workshop
+  .credits
+  .technicals
+  .clinets
+  .relateds
+  .website
+  .exhibitions
+  .ranagram
+    font-size: $font_size_s;
+    line-height $font_size_s * 2.0
+    letter-spacing $letter_space_s
+    margin-top $letter_height_s * 3
+    &:first-child{
+      margin-top 0
+    }
+    > h1
+      font-weight 700
+    ul
+      margin-top $letter_height_s * 0.4
+      li
+        line-height $font_size_s * 2
+      a
+        color #000
+        &:hover
+          color $color_over
+//
+// progress
+//
+header+.progress
+  margin-top 0
+.progress
+  margin-top $letter_height_m
+  border solid 4px #000
+  padding ($letter_height_m *1.5) ($letter_width_m * 2) ($letter_height_m) // 1.5=.dateのline-heightを考慮
+
+  .date
+    margin-top $letter_height_m
+    font-weight 700
+    font-size: $font_size_l;
+    letter-spacing $letter_space_l
+    line-height $letter_height_l *1.8
+  .texts
+    text-align justify
+    margin-top $font_size_m * 2
+    line-height $font_size_m * 1.9
+    p
+      font-size $font_size_m - 1px
+      margin-top $font_size_m *2
+      &:first-child
+        margin-top 0
+      a
+        color #000
+        &:hover
+          color $color_over
+      strong
+        font-weight 700
+        font-size: $font_size_l;
+        letter-spacing $letter_space_l
+        line-height $letter_height_l *1.8
+
+  .visual
+    .picture
+      margin-top $letter_height_m
+      width 100%
+      display block
+      &:first-child
+        margin-top 0
+    .video,
+      margin-top $letter_height_m
+      display block
+
+//
+// about
+//
+#map_canvas
+  // 16:9
+  width 840px
+  height 472px
+
+.concept
+  font-size $font_size_m
+  line-height $font_size_m *2
+  letter-spacing $letter_space_m
+
+  a
+    color #000
+    text-decoration underline
+    &:hover
+      color $color_over
+
+  .en
+    margin-top $letter_height_m *2
+    p
+      margin-top $font_size_m * 2
+      text-align justify
+      &:first-child
+        margin-top 0
+  .jp
+    color #111
+    margin-top $letter_height_m *2
+    font-size: ($font_size_m - 1);
+    p
+      text-align justify
+      margin-top $font_size_m
+      &:first-child
+        margin-top 0
+  .en+.jp{
+    margin-top $letter_height_m *4
+  }
+
+.what_we_do, .group, .contact
+  font-size $font_size_s
+  margin-top $font_size_s * 4
+  letter-spacing $letter_space_s
+  h1
+    font-weight 700
+  ul
+    margin-top $font_size_s
+    li
+      line-height $font_size_s * 2.2
+  a
+    color #000
+    &:hover
+      color $color_over
+.what_we_do
+  margin-top $font_size_s * 6

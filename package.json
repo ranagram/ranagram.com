@@ -1,0 +1,25 @@
+{
+  "name": "gramsite",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ranagram/ranagram.com.git"
+  },
+  "author": "RANAGRAM",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp-jade": "^1.1.0",
+    "gulp-stylus": "^2.3.1",
+    "gulp-webpack": "^1.5.0",
+    "nib": "^1.1.0"
+  }
+}

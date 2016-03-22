@@ -1,0 +1,564 @@
+[
+    {
+        "uid": "dcws",
+        "date": "2015",
+        "title": ["Digital Craft Workshop at IID"],
+        "toptitle": ["Digital Craft Workshop at IID"],
+        "topsize": "large",
+        "top_visual": "0.jpg",
+        "video_id": "156825731",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"}
+        ],
+        "description_en": " ",
+        "description_ja": "自分で描いた似顔絵が動くメッセージムービーを作る、ワークショップを企画・開発しました。自由に似顔絵を描き、RANAGRAMが開発した独自のモーションキャプチャーソフトウェアを操作することで、似顔絵が話すムービーを作成することができます。自分の顔に合わせて絵が動くので、好きな表情、言葉を録画、録音することができます。特別な技術は必要なく、どなたでも自由に参加できる企画です。作ったムービーはいつでもスマートフォンやパソコンでご覧できるよう、ウェブへアップロードされます。このワークショップは、今後も様々な場所で開催予定です。",
+        "workshop": [
+            "Venue: Ikejiri Institute of Design",
+            "Date: Feb 14, 2016."
+        ],
+        "credits": [
+            "Designer, Facilitator: Nozomi Shirai",
+            "Software Developer, Sound Designer: Masahide Yoshida"
+        ]
+    },
+    {
+        "uid": "datanavi",
+        "date": "2015",
+        "title": ["Data Visualisers for NHK DATA NAVI"],
+        "toptitle": ["Data Visualisers for NHK DATA NAVI"],
+        "topsize": "large",
+        "video_id": "147834480",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"}
+        ],
+        "description_en": "We produced an application of data visualization, for a monthly TV show of data information on NHK, DATA NAVI, for three times. The app was operated in the live show in real-time. We developed two versions of “Economic Sensor” that analyse consumer behavior and psychology by mapping public statistical surveys “Family Income and Expenditure Survey”, “Foreign Trade Statistics” and “Consumption Survey” in three-dimensional graphics. Another application we developed is to analyse and visualize an average age, the number of female diet members and hereditary members from the data of the total diet members since 1945, approximately 18,000.",
+        "description_ja": "月一回放送中のNHKデータ情報番組『データなび 世界の明日を読む』において３回にわたり、データ可視化アプリケーションを制作。アプリケーションは、生放送中の番組内でリアルタイムに操作されました。総務省が公開している「家計調査」「貿易統計」「消費動向調査」など複数の経済統計データを、三次元上へグラフとしてマッピングすることで、消費者の行動や心理を分析する２つのバージョンの「エコノミックセンサー」を開発しました。また、戦後に選出されたのべ約18,000人の国会議員の平均年齢や当選回数、女性議員の数や世襲議員などを都道府県別に分析・可視化するアプリケーションを開発しました。",
+        "credits": [
+            "Director: Takashi Aoki",
+            "Software Developer: Masahide Yoshida",
+            "Producer: Yasuo Kaneda"
+        ],
+        "clients": [
+            "<a target=\"_blank\" href=\"http://www.nhk.or.jp\">NHK（Japan Broadcasting Corporation) </a>"
+        ]
+    },
+    {
+        "uid": "lovol",
+        "date": "May 13 to 18, 2015",
+        "title": ["LOVOL Exhibition at Yokohama Red Brick Warehouse"],
+        "toptitle": ["LOVOL Exhibition at Yokohama Red Brick Warehouse"],
+        "topsize": "large",
+        "top_visual": "0.jpg",
+        "video_id": "129531465",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"},
+            {"type": "picture", "path": "5.jpg"},
+            {"type": "picture", "path": "6.jpg"},
+            {"type": "picture", "path": "7.jpg"}
+        ],
+        "description_en": "The exhibition, LOVOL was held at <a href=\"http://www.yokohama-akarenga.jp/en/\" target=\"_blank\">Yokohama Red Brick Warehouse Gallery</a>, May 13 to 18, 2015. We used a white neon sign to coherently design the exhibition space and mark each of works. At the entrance area, we installed a light installation, which represented the whole space to greet visitors. The installation consists of 31 neon tubes. The flickering patterns of light are continually and randomly generated. The sound is in sync with flickering light. <a href=\"http://asarihiroya.tumblr.com/\" target=\"_blank\">Hiroya Asari</a>, artist and graphic designer, organised the LOVOL exhibition. This inaugural exhibition brought together works by 6 artists from 5 groups under the theme of ‘fertility’. The LOVOL series will be continued and will come back soon.",
+        "description_ja": "<a href=\"http://www.yokohama-akarenga.jp\" target=\"_blank\">横浜赤レンガ倉庫ギャラリー</a>で行われたLOVOL展にて、展示空間の設計を担当しました。展示空間全体を構成するため、白色ネオン管でできたサインを各作品の指標として使用しました。エントランスエリアでは、展示空間全体を象徴するライトインスタレーションが、来場者を迎えます。インスタレーションは31本のネオン管からできており、光の明滅パターンは常にランダムに生成され、明滅に合わせて音が変化します。<br/>LOVOL展は、アーティスト兼グラフィックデザイナーの<a href=\"http://asarihiroya.tumblr.com/\" target=\"_blank\">浅利浩也</a>が主催しています。初回の展示には、５組６人のアーティストが感じた「豊かさ」をテーマとした作品が集まりました。LOVOL展は今後も継続的に開催していく予定です。",
+
+        "lovol_exhibitions": [
+            "Venue: <a href=\"http://www.yokohama-akarenga.jp/en/\" target=\"_blank\">Yokohama Red Brick Warehouse Gallery</a>",
+            "Date: May 13 to 18, 2015."
+        ],
+
+        "spatial_design": [
+            "Planning: RANAGRAM",
+            "Director: Yasuo Kaneda",
+            "Designer, Project Manager: Nozomi Shirai",
+            "Art Director: <a href=\"http://takashiaoki.com\" target=\"_blank\">Takashi Aoki</a>"
+        ],
+
+        "neon_light_installation": [
+            "Planning: RANAGRAM",
+            "Director: Yasuo Kaneda",
+            "Designer, Project Manager: Nozomi Shirai",
+            "Software Developer, Sound Designer: Masahide Yoshida"
+        ]
+    },
+    {
+        "uid": "lux",
+        "date": "24 Sep 2014",
+        "title": ["LUX 25th Anniversary ‘Bloom to Shine’"],
+        "toptitle": ["LUX 25th Anniversary ‘Bloom to Shine’"],
+        "topsize": "large",
+        "top_visuals": ["2.jpg", "1.jpg"],
+        "main_visuals": [
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"}
+        ],
+        "description_en": "At Omotesando Hills, the brand of haircare ‘LUX’ organised a participatory event, ‘Bloom to Shine’ to commemorate the 25th anniversary of the release in Japan. We created an interactive installation for the event by making four booths with 66 MicroTiles and LED lights. A Kinect sensor detected a figure of a visitor at each booth and then hi-res 3D motion graphics of stylised plants and jewellery were generated on the background. Visitors were able to see different visuals interactively changing and growing according to their movement and their own image together on the one-way mirror. Images of visitors and backgrounds were automatically filmed by cameras installed at booths, and uploaded to <a href=\"http://www.lux25.jp/\" target=\"_blank\">the official website</a> as motion images. RANAGRAM developed the custom software that generated real-time animated visuals and controlled LED lighting, and the remote system that controlled all four booths in sync.",
+        "description_ja": "表参道ヒルズで行われた、ヘアケアブランド「LUX」の日本での発売25周年を記念した参加型イベント「Bloom to Shine」のためのインタラクティブ・インスタレーション。66個のマイクロタイルディスプレイ、LEDライティングを使用した4つのブースからインスタレーションを構成しました。Kinectセンサーがブース内の人を感知し、背景のディスプレイに植物やジュエリーをモチーフにした高解像度の3DCGビジュアルを生成します。参加者はハーフミラーで自分の動きにあわせて、インタラクティブに変化・成長する様々なビジュアルと、それと一体化した自分の映像を見ることができます。参加者の画像は、ブース内に設置されたカメラで自動撮影され、<a href=\"http://www.lux25.jp/\" target=\"_blank\">公式サイト</a>にアニメーションイメージとしてアップロードされます。ラナグラムは、ビジュアルをリアルタイムにアニメーションさせる映像生成プログラムと、LEDライティング制御プログラム、全ブースの遠隔・同期コントロールシステムを開発しました。",
+        "credits": [
+            "Creative Direction: <a href=\"http://www.projector.jp\" target=\"_blank\">Projector</a>",
+            "Spatial Direction: <a href=\"http://www.jtq.jp\" target=\"_blank\">JTQ Inc.</a>",
+            "Art Direction: <a href=\"http://white.jp\" target=\"_blank\">White</a>",
+            "Main Installation: <a href=\"http://w0w.co.jp\" target=\"_blank\">WOW</a>",
+            "Main Installation Program: RANAGRAM ",
+            "Entrance Installation: <a href=\"http://rhizomatiks.com\" target=\"_blank\">Rhizomatiks</a>",
+            "Music and Sound Design: <a href=\"http://evala.jp\" target=\"_blank\">evala</a> (port, ATAK)",
+            "Web Design and Production: <a href=\"http://www.s2factory.co.jp\" target=\"_blank\">S2 Factory, Inc.</a> / minsak / maima",
+            "Film Making: <a href=\"http://www.robot.co.jp\" target=\"_blank\">ROBOT</a>",
+            "Produce: <a href=\"http://kichiinc.jp\" target=\"_blank\">kichi</a> / <a href=\"http://www.robot.co.jp\" target=\"_blank\">ROBOT</a>"
+        ],
+        "ranagram": [
+            "Mechanics, Electronics Management: Yasuo Kaneda",
+            "Director of Software Development: <a href=\"http://takashiaoki.com/\" target=\"_blank\">Takashi Aoki</a>",
+            "Lead Software Development: Masahide Yoshida, <a href=\"http://www.gerardrallo.net\" target=\"_blank\">Gerard Rallo</a>"
+        ],
+        "clients": [
+            "<a href=\"http://www.unilever.co.jp\" target=\"_blank\">Unilever Japan</a>"
+        ]
+    },
+    {
+        "uid": "cklivent",
+        "date": "11 Dec 2013",
+        "title": ["Color Kinetics Interactive LED Facade"],
+        "toptitle": ["Color Kinetics Interactive LED Facade"],
+        "topsize": "large",
+        "top_visual": "1.jpg",
+        "video_id": "100865574",
+        "main_visuals": [
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"},
+            {"type": "picture", "path": "5.jpg"},
+            {"type": "picture", "path": "6.jpg"},
+            {"type": "picture", "path": "7.jpg"},
+            {"type": "picture", "path": "8.jpg"},
+            {"type": "picture", "path": "9.jpg"}
+        ],
+        "description_en": "<a href=\"http://www.colorkinetics.co.jp/\" target=\"_blank\">Color Kinetics Japan</a> and RANAGRAM researched and developed together on an interactive facade. We set approximately 1,000 LED lamps on the back of an iron lattice installed on the 4 x 2.5 m wall. Indirect lighting can make subtle visual patterns by employing the reflection of light to the wall. Geometric patterns that change shapes as time goes by and animations that is based on a sound spectrum are generated by using Perlin noise. You can change the density and color of patterns by using the iPad controller. In the tracking mode, outlines of spectators are detected by Kinect sensor and illustrated on the wall screen. When spectators move, the motion of spectators are gradually illustrated with changing its color through optical flow algorithm. We presented this project as a concept work for Live Entertainment and Event Expo 2014 at Tokyo Big Sight. We are planning to adapt this work to a real building soon.",
+        "description_ja": "<a href=\"http://www.colorkinetics.co.jp/\" target=\"_blank\">カラーキネティクス・ジャパン</a>とラナグラムの２社共同で、インタラクティブ・ファサードを研究開発しました。建物の外壁を模した4 x 2.5mの壁面へ鉄の格子をはめ込み、その裏に約1,000個のLEDを設置。奥の壁への反射光を利用することで、柔らかな間接照明での映像表現を行っています。パーリンノイズを用いて、時間の経過と共に形が変化する幾何学的な紋様や、サウンドのスペクトラム値をベースとしたアニメーションを生成しています。iPadコントローラーを操作することにより模様の密度や色相を変更することが出来ます。Kinectセンサーを用いたトラッキングモードでは、人の輪郭を捉えスクリーンとなった壁に影を映します。人が移動した際に風の流れのシミュレーションを行い、色を徐々に変化させながら軌跡を描きます。今作品はコンセプトワークとして、2014年東京ビッグサイトで行われたライブ＆イベント産業展にて出品しました。今後、実際の建物での使用へと発展させていく予定です。",
+        "credits": [
+            "Director, Lead Developer: Masahide Yoshida",
+            "Art Director, Interaction Designer: <a href=\"http://takashiaoki.com/\" target=\"_blank\">Takashi Aoki</a>",
+            "Producer: Yasuo Kaneda",
+            "Project Manager: Nozomi Shirai",
+            "Sounds: Keiichi Sugimoto (<a href=\"http://frolicfon.com/\" target=\"_blank\">frolicfon.com</a>)",
+            "LED Lighting: Color Kinetics Japan",
+            "　",
+            "Created by <a href=\"http://www.colorkinetics.co.jp/\" target=\"_blank\">Color Kinetics Japan</a> & RANAGRAM"
+        ],
+        "exhibitions": ["LIVENT at TOKYO BIG SIGHT, Tokyo, 2014"]
+    },
+    {
+        "uid": "ripslyme",
+        "date": "11 Dec 2013",
+        "title": ["RIP SLYME TOUR 2013", "DANCE FLOOR MASSIVE Ⅳ"],
+        "toptitle": ["RIP SLYME TOUR 2013", "DANCE FLOOR MASSIVE Ⅳ"],
+        "topsize": "large",
+        "top_visual": "001.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "002.jpg"},
+            {"type": "picture", "path": "003.jpg"},
+            {"type": "picture", "path": "004.jpg"},
+            {"type": "picture", "path": "005.jpg"},
+            {"type": "picture", "path": "006.jpg"},
+            {"type": "picture", "path": "007.jpg"},
+            {"type": "picture", "path": "008.jpg"},
+            {"type": "picture", "path": "009.jpg"}
+        ],
+        "description_en": "DANCE FLOOR MASSIVE IV was a nationwide Japan tour of a hip hop group <a href=\"http://www.ripslyme.com/\" target=\"_blank\">RIP SLYME</a> performing 18 gigs in total from October 2013. We created the stage visual in collaboration with <a href=\"http://www.samprasdesign.com/\" target=\"_blank\">SAMPRAS DESIGN</a>. <a href=\"http://www.ripslyme.com/disco/detail.php?media_category_id=3&media_id=58\" target=\"_blank\">DVD & Blu-ray</a> of the live at Zepp DiverCity in Tokyo are on sale.",
+        "description_ja": "<a href=\"http://www.ripslyme.com/\" traget=\"_blank\">リップスライム</a>の日本全国ツアー「DANCE FLOOR MASSIVE IV」全１８公演において、<a href=\"http://www.samprasdesign.com/\" target=\"_blank\">サンプラスデザイン</a>と共同で映像演出を担当しました。Zepp DiverCityで行われた東京公演を収録した<a href=\"http://www.ripslyme.com/disco/detail.php?media_category_id=3&media_id=58\" target=\"_blank\">ＤＶＤとブルーレイディスク</a>が発売中です。",
+        "technicals": [
+            "Software: openFrameworks, Action Script, After Effects"
+        ],
+        "credits": [
+            "Director: Yu Iwasaki (<a href=\"http://www.samprasdesign.com/\" target=\"_blank\">SAMPRAS DESIGN</a>)",
+            "Developers: Masahide Yoshida, Shinobu Tanno",
+            "Editor: Yoshiyuki Shimada"
+        ],
+        "clients": [
+            "<a href=\"http://wmg.jp/\" target=\"_blank\">Warner Music Japan</a>",
+            "<a href=\"http://www.tanabe-agency.co.jp/\" target=\"_blank\">TANABE AGENCY.Co.Ltd.</a>"
+        ],
+        "links": {
+            "DVD & Blu-ray - DANCE FLOOR MASSIVE IV PLUS": "http://www.ripslyme.com/disco/detail.php?media_category_id=3&media_id=58"}
+    },
+    {
+        "uid": "harukas",
+        "date": "07 Mar 2014",
+        "title": ["Lighting & Audio-visual Installation", "ABENO HARUKAS"],
+        "toptitle": ["Lighting & Audio-visual Installation", "ABENO HARUKAS"],
+        "topsize": "large",
+        "top_visual": "0.jpg",
+        "video_id": "89983533",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"},
+            {"type": "picture", "path": "5.png"}
+        ],
+        "description_en": "<a href=\"http://www.abenoharukas-300.jp/en/\" target=\"_blank\">Abeno Harukas</a> is Japan’s tallest skyscraper complex in Osaka, Japan. We created an installation space that immerses visitors in light and ambient sound in the escalator area between the restaurant floor on the 14F and the museum floor on the 16F in Harukas as a permanent exhibition. The gradation of light and sound greets visitors with variation depending on time and seasons. The changing light responds to the sound. Real-time text messages appear on the screen. The motion graphics include the spectacle of Abeno area, where Harukas is centrally based with different angles. The digital media space embodies the concept of Harukas, ‘the solid city presenting the future’ uniting light, sound and motion graphics. We developed the permanent exhibition system with different pieces of software connected on a network, which allows both daily and seasonal changes.",
+        "description_ja": "高さ日本一の超高層複合ビル「<a href=\"http://www.abenoharukas-300.jp/\" target=\"_blank\">あべのハルカス近鉄本店</a>」タワー館レストランフロアの１４階と美術館フロアの１６階をつなぐエスカレーターゾーンを、光と音に包まれたインスタレーション空間として演出しました。四季や時間帯によって変化する音と色のグラデーションが訪れる人びとを迎えます。光のラインが奏でる音色。リアルタイムに変化するテキストメッセージ。さまざまな視点からのぞむハルカスを中心に広がるあべのの景色。光と音と映像が一体となったデジタルメディア空間でハルカスのコンセプト「未来を発信する立体都市」を体感できます。ネットワーク化された複数のソフトウェアによる常設展示システムを構築し、季節ごとの変化、毎日の変化といったバリエーションを可能にしています。",
+        "technicals": [
+            "Lighting Control Software: openFrameworks",
+            "Generative Typography & Visual Control Software: openFrameworks",
+            "Sound Generating Software: Max/MSP",
+            "Content Management System (CMS): Node.js + MongoDB"
+        ],
+        "credits": [
+            "Director, Interaction Designer: <a href=\"http://takashiaoki.com/\" target=\"_blank\">Takashi Aoki</a>",
+            "Technical Director, Sound Software Development: Yasuo Kaneda",
+            "Developers: Keisuke Yamamoto, Shinobu Tanno, Kuninori Fujii",
+            "Producer: Yasuo Kaneda, Kei Okazaki (RaNa Design)",
+            "Additional Development: Masahide Yoshida",
+            "Planning: RANAGRAM",
+            "CG Animation: <a href=\"http://www.samprasdesign.com/\" target=\"_blank\">SAMPRAS DESIGN</a>",
+            "Sound Design: Tatsuya Yamada (<a href=\"http://ttymd.com/\" target=\"_blank\">ttymd.com</a>)",
+            "Lighting Consultant: <a href=\"http://www.style-matec.co.jp/\" target=\"_blank\">STYLE MA’TEC.,Ltd</a>",
+            "Production: <a href=\"http://www.infix-design.com/\" target=\"_blank\">Infix Design inc.</a>"
+        ],
+        "clients": [
+            "<a href=\"https://www.d-kintetsu.co.jp/corporate/index.html\" target=\"_blank\">Kintetsu Department Store Co., Ltd.</a>"
+        ]
+    },
+
+    {
+        "uid": "pana-wall-osaka",
+        "date": "26 April 2013",
+        "title": ["VISION WALL", "Panasonic Center Osaka"],
+        "toptitle": ["VISION WALL", "Panasonic Center Osaka"],
+        "topsize": "large",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"}
+        ],
+        "description_en": "15m wide interactive wall that continuously changes in response to season and visitors data at the vision wall in <a href=\"http://panasonic.net/center/osaka/\" target=\"_blank\">Panasonic Center Osaka</a>. The visuals and sounds respond to the optical flow data of the pedestrians in the building; the motion traking data of the visitor's movements captured by 6ch three-dimentional image sensors; daylight level and season. We developed the ever-changing interactive wall with different components: the visual application incorporated with openFrameworks and the audio processing program mosaicking 10ch sounds in real-time using Max/MSP.",
+        "description_ja": "<a href=\"http://panasonic.co.jp/center/osaka/\" target=\"_blank\">パナソニックセンター大阪</a>ビジョンウォールにて、横幅１５ｍのインタラクティブウォールを制作しました。６台の三次元距離センサーによる鑑賞者のモーショントラックデータ、施設内来客の流量データ、季節といった複数の要素により、ビジュアルとサウンドがリアルタイムに変化し続け、訪れるたびに違った表情を楽しむことが出来ます。ラナグラムでは、openFrameworksによるヴィジュアルをリアルタイム生成するプログラム、Max/MSPによるサウンドプログラム、流量データを解析するプログラムを担当しました。",
+        "technicals": [
+            "Custom Software: <a href=\"http://www.openframeworks.cc/\" target=\"_blank\">openFrameworks</a>, Max/MSP"
+        ],
+        "credits": [
+            "Developers: Yasuo Kaneda, Masahide Yoshida, Shinobu Tanno",
+            "Direction & Visual Design: <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc</a>",
+            "Technical Director: <a href=\"http://adsr.jp/\" target=\"_blank\">Masato Tsutsui</a>",
+            "Sound Design: <a href=\"http://hatanakamasato.net/\" target=\"_blank\">Masato Hatanaka</a>"
+        ],
+        "clients": ["<a href=\"http://www.panasonic.com/\" target=\"_blank\">Panasonic</a>"]
+    },
+
+    {
+        "uid": "pana-wall",
+        "date": "11 Dec 2013",
+        "title": ["SEED, Interactive Wall", "Panasonic Center Tokyo"],
+        "toptitle": ["SEED, Interactive Wall", "Panasonic Center Tokyo"],
+        "topsize": "large",
+        "top_visual": "0.jpg",
+        "video_id": "55759120",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"}
+        ],
+        "description_en": "An interactive wall that continuously changes in response to weather and visitors data at <a href=\"http://panasonic.net/center/tokyo/floor/floor_01/\">the Green Lab, Panasonic Center Tokyo.</a> This interactive wall visually represents the effects of people and the environment. Visitors can witness such changes through onscreen motion graphics, and can enjoy the visuals and sounds that alter dependant on each season of the year. The visuals respond to the amount of sunlight on the premises. Additional visual elements appear based on the number of visitors to the centre, floating and moving in response to the visitors movements. We developed this ever-changing interactive wall with different components: 3D motion sensing cameras that track the visitors' movements, a visual application built with <a href=\"http://libcinder.org/\" target=\"_blank\">Cinder</a> in connection to a data base system.",
+        "description_ja": "<a href=\"http://panasonic.co.jp/center/tokyo/floor/floor_01/green/\" target=\"_blank\">パナソニックセンター東京のグリーンLab.</a>に天候や来場者によってヴィジュアルとサウンドが変化し続けるインタラクティブウォールを制作。施設内にある照度計、来場者カウンタから毎分送信されるデータや、季節という様々な要素によりヴィジュアルが常に変化し続け、訪れる度に違う表情を見る事ができます。また、三次元距離センサーを使用した鑑賞者のトラッキングにより、人の動きに合わせてSeed（種）が浮遊します。ラナグラムでは「<a href=\"http://libcinder.org/\" target=\"_blank\">Cinder</a>」を使ったヴィジュアルアプリケーション及び各データを解析／蓄積するデータベースサーバを担当しました。",
+        "technicals": [
+            "Visual Control Software: <a href=\"http://libcinder.org/\" target=\"_blank\">Cinder</a>",
+            "Sound Generating Software: Max/MSP",
+            "External Data Management System: PHP + MySQL"
+        ],
+        "credits": [
+            "Interaction Design & Development: Masahide Yoshida, <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>",
+            "Direction: <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>",
+            "Sound Design: <a href=\"http://hatanakamasato.net/\" target=\"_blank\">Masato Hatanaka</a>",
+            "Design: <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>"
+        ],
+        "clients": ["<a href=\"http://www.panasonic.com/\" target=\"_blank\">Panasonic</a>"]
+    },
+
+    {
+        "uid": "docomo-palette",
+        "date": "11 Dec 2013",
+        "title": ["DOCOMO Palette UI Installation"],
+        "toptitle": ["DOCOMO Installation"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "video_id": "55758651",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"}
+        ],
+        "description_en": "The Palette UI is an innovative user interface designed by DOCOMO, which specifically highlights the functions of sorting, grouping and customising. This installation enables visitors to touch and feel these features using an actual Android device. A variety of objects are projected and flow from above down the wall. These objects are modified as they flow through the mobile device into motion graphic representations of the Palette UI. Visitors can interactive with the on-screen objects, which represent the idea of sorting disordered things. We designed a \"light tunnel\" that enables visitors to touch and feel the Palette UI utilising 8 projector back projection, and 8 Android devices within the tunnel.",
+        "description_ja": "ドコモオリジナルのユーザーインターフェイス「Palette UI」の特徴を体感できる、ダイナミックな動きのあるインスタレーション。トンネル状に作られた空間の裏側に、８台のプロジェクター、内側に８台のアンドロイド端末を設置。端末画面をフリック、ピンチインアウトさせる事により、投影されている映像をリアルタイムに操作し、雑然としたオブジェクトを収集・整理する行為を体感できるようにデザインしました。ウェブサイトもコンセプトを統一し、シンプル且つダイナミックな動きのある演出で表現しました。",
+
+        "technicals": [
+            "Visual Control Software: openFrameworks",
+            "Sound Generating Software: Max/MSP"
+        ],
+
+        "credits": [
+            "Interaction Design & Development: Masahide Yoshida, Yasuo Kaneda, <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>",
+            "Direction & Visual Design: <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>",
+            "Sound Design: <a href=\"http://hatanakamasato.net/\" target=\"_blank\">Masato Hatanaka</a>"
+        ],
+        "clients": ["<a href=\"https://www.nttdocomo.co.jp/\" target=\"_blank\">NTT DOCOMO</a>"],
+        "relateds": ["<a href=\"/works/docomo-palette-ui\">DOCOMO Palette UI Promotional Website</a>"]
+    },
+
+    {
+        "uid": "shugotokumaru",
+        "date": "07 Nov 2012",
+        "title": ["Shugo Tokumaru - In Focus?"],
+        "toptitle": ["Shugo Tokumaru - In Focus?"],
+        "topsize": "small",
+        "top_visual": "001.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "002.jpg"},
+            {"type": "picture", "path": "003.jpg"},
+            {"type": "picture", "path": "004.jpg"},
+            {"type": "picture", "path": "005.jpg"},
+            {"type": "picture", "path": "006.jpg"},
+            {"type": "picture", "path": "007.jpg"},
+            {"type": "picture", "path": "008.jpg"},
+            {"type": "picture", "path": "009.jpg"}
+        ],
+        "description_en": "We produced a website that enables users to create their own composition by drawing music on-screen, using instrumental phrases taken from a limited edition version of the <a href=\"http://www.shugotokumaru.com/infocus/\" target=\"_blank\"><i>In Focus?</i></a> album by Shugo Tokumaru. Taking inspiration from the album title we designed the website around the concept of a microscope. Each new compositions created by a user can be posted and shared on the website, and also via Twitter and Facebook.",
+        "description_ja": "トクマルシューゴ「<a href=\"http://www.shugotokumaru.com/infocus/\" target=\"_blank\">In Focus?</a>」アルバム特設サイトを制作しました。アルバムタイトルから連想された顕微鏡がモチーフとなったスクリーン上へ描かれたドローイング作品が音楽を奏でます。音源には限定盤に収録されている楽器フレーズ集を使用しています。ユーザによる作品は投稿してサイト上で閲覧でき、さらにTwitterやFacebookへ共有する事が可能です。",
+        "credits": [
+            "Creative Director: Yasuo Kaneda",
+            "Art Director: Shinobu Tanno",
+            "Developer: Yasuo Kaneda, Masahide Yoshida",
+            "Designer: Nozomi Shirai",
+            "Sound: <a href=\"http://www.shugotokumaru.com/\" target=\"_blank\">Shugo Tokumaru</a>"
+        ],
+        "clients": [
+          "<a href=\"http://www.tonofon.com/\" target=\"_blank\">TONOFON</a>",
+          "<a href=\"http://p-vine.jp/\" target=\"_blank\">P-VINE</a>"
+        ],
+        "website": {"name": "www.shugotokumaru.com/infocus", "href": "http://www.shugotokumaru.com/infocus/"}
+    },
+
+    {
+        "uid": "visuamusio",
+        "date": "29 Mar 2013",
+        "title": ["VISUAMUSIO API"],
+        "toptitle": ["VISUAMUSIO API"],
+        "topsize": "small",
+        "top_visual": "001.jpg",
+        "main_visuals": [
+            {"type": "video", "path": "56272661"},
+            {"type": "picture", "path": "002.jpg"},
+            {"type": "picture", "path": "003.jpg"}
+        ],
+        "description_en": "<a href=\"http://appart.jp/index.html#/?3-en\" target=\"_blank\"><i>VISUAMUSIO</i></a> is an iPad application for the creation of visual music animations. We were in charge of the development of the generative audio system and programming both the database server API and the sharing website.We developed the online database system for allowing people to share their visual music compositions in collaboration with <a href=\"http://www.w0w.co.jp\" target=\"_blank\">WOW Inc.</a>",
+        "description_ja": "<a href=\"http://www.w0w.co.jp\" target=\"_blank\">WOW</a>よりリリースされた、音楽とアニメーションをテーマにしたiPadアプリ「<a href=\"http://appart.jp/index.html#/?3-jp\">VISUAMUSIO</a>」のシェアリングサイト。ラナグラムではサーバサイドでの音響合成システム、データベースAPI及びシェアリングサイトの構築を行いました。ユーザーからの送信データより生成した楽曲をオンラインで共有できます。",
+        "credits": [
+            "Server API & Generative Audio System: Masahide Yoshida",
+            "Front-end development: Keisuke Yamamoto",
+            "Direction & Visual Design: <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>"
+        ],
+        "website": {"name": "visuamusio.com", "href": "http://visuamusio.com/"}
+    },
+
+    {
+        "uid": "jun-matsushima",
+        "date": "29 Mar 2013",
+        "title": ["Jun Matsushima"],
+        "toptitle": ["Jun Matsushima"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"}
+        ],
+        "description_en": "An online work archive for tokyo based artist Jun Matsushima.",
+        "description_ja": "東京をベースに活動する画家、松島純のポートフォリオサイトを制作しました。",
+        "credits": [
+            "Design & Code: <a href=\"http://takashiaoki.com/\" target=\"_blank\">Takashi Aoki</a>"
+        ],
+        "technicals": [
+            "Thumblr API, Javascript, HTML"
+        ],
+
+        "website": {"name": "www.matsushimajun.com", "href": "http://www.matsushimajun.com/"}
+    },
+
+    {
+        "uid": "fillspector",
+        "date": "10 Oct 2012",
+        "title": ["Fill Spector Web App"],
+        "toptitle": ["Fill Spector Web App"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"}
+        ],
+
+        "description_en": "We developed an application interface program (API) for <i>Fill Spector</i>, an original Facebook application produced by <a href=\"http://www.w0w.co.jp\" target=\"_blank\">WOW Inc.</a> Every time a user visits the application, the story progresses like a picture book. Using <a href=\"https://developers.facebook.com/docs/graph-api\" target=\"_blank\">Facebook Graph API</a>, we developed the system for notification on Facebook to update users of the progress of the story.",
+        "description_ja": "訪れるごとにストーリーが進むウェブ上の絵本。<a href=\"http://www.w0w.co.jp\" target=\"_blank\">WOW</a>オリジナルのフェイスブックアプリケーション「Fill Spector」のAPIを開発しました。<a href=\"https://developers.facebook.com/docs/graph-api\" target=\"_blank\">Facebook Graph API</a>を使用して、ストーリーの進行をユーザーへ通知するシステムを構築しました。",
+        "credits": [
+            "Technical Direction & Development: Masahide Yoshida",
+            "Illustrator: <a href=\"http://www.yuukimashiko.com/portfolio.html\" target=\"_blank\">Yuuki Mashiko</a>",
+            "Art Direction: <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>"
+        ],
+        "clients": ["<a href=\"http://www.w0w.co.jp\" target=\"_blank\">WOW Inc.</a>"],
+        "website": {"name": "www.facebook.com/fillspector", "href": "https://www.facebook.com/fillspector"}
+    },
+    {
+        "uid": "beams",
+        "date": "31 Aug 2012",
+        "title": ["BEAMS CATALOGUE"],
+        "toptitle": ["BEAMS CATALOGUE"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"},
+            {"type": "picture", "path": "5.png"}
+        ],
+        "description_en": "An online catalogue for <a href=\"http://www.beams.co.jp/\" target=\"_blank\">BEAMS</a> JAPAN, Autumn & Winter 2012 collection. We designed this website not only as a re-edited version of the printed catalogue but optimised the interface specifically for the online version. The global menu is an opening-and-closing type, and displays contents in consideration of window size, and scroll position. The badge style icon of the labels rotates according to the rhythm of a clock on the top page.",
+        "description_ja": "<a href=\"http://www.beams.co.jp/\" target=\"_blank\">ビームス</a>の２０１２秋冬のカタログスペシャルサイト。ペーパーカタログの再現にとどめず、ユーザインタフェースにこだわりウェブに最適化したデザインを目指しました。コンテンツを最大限魅せるようにするため、開閉可能なグローバルナビゲーションを採用。ウィンドウサイズやスクロール位置などを考慮して表示の切り替えが可能です。トップページでは、<a href=\"http://www.beams.co.jp/\" target=\"_blank\">ビームス</a>全レーベル及びショップのアイコンが、時計に合わせてリズミカルに回転します。",
+        "credits": [
+            "Art Director: Jurie Nanbu (RaNa Design)",
+            "Designer: RaNa Design (Jurie Nanbu, Masayo Kondo, Keisuke Yotsumoto)",
+            "Front-end Engineer: Keisuke Yamamoto, Yuuji Fujimoto",
+            "Project Manager: Muto Masataka (RaNa Design)",
+            "Producer: Tsuyoshi Sato (RaNa Design)",
+            "Editor: <a href=\"http://www.rhino-inc.jp/\" target=\"_blank\">Rhino Inc.</a>",
+            "Production: <a href=\"http://www.cosmo-com.jp/\">Cosmo Communications Inc.</a>"
+        ],
+        "clients": ["<a href=\"http://www.beams.co.jp/\" target=\"_blank\">BEAMS</a>"]
+    },
+
+    {
+        "uid": "elle2013ss",
+        "date": "29 Mar 2013",
+        "title": ["ELLE ONLINE STYLE LESSON10"],
+        "toptitle": ["ELLE ONLINE STYLE LESSON10"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"},
+            {"type": "picture", "path": "5.jpg"},
+            {"type": "picture", "path": "6.jpg"},
+            {"type": "picture", "path": "7.png"}
+        ],
+        "description_en": "Issue three of the web based interactive magazine <a href=\"http://www.elle.co.jp/\" target=\"_blank\">ELLE ONLINE</a> Fashion Trends Guide, Spring & Summer 2013. Showing a variety of styles across ten pages, we made use of the beautiful visual content to design a website with a smooth user experience.",
+        "description_ja": "<a href=\"http://www.elle.co.jp/\" target=\"_blank\">エル・オンライン</a>の動くトレンドカタログ第３弾。「インタラクティブな雑誌」「教科書」というコンセプトで、２０１３年春夏のシーズンのファッショントレンドを伝えるスペシャルサイトです。趣の異なるコンテンツが１０ページに渡って展開されます。コンテンツの美しさを生かすため、ページを次々と気持ちよく閲覧していけるような設計にこだわりました。",
+        "credits": [
+            "Creative Director: <a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>",
+            "Art Director: Julie Nanbu (RaNa Design)",
+            "Front-end Engineer: Naoki Sekiguchi",
+            "Designer: Tomoko Suzuki (RaNa Design)",
+            "Project Manager: Ikuko Matsuda (RaNa Design)",
+            "Photographer: Akira Kitajima (<a href=\"http://www.sputnik.ne.jp/\" target=\"_blank\">SPUTNIK</a>)",
+            "Copy Writer: <a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>"
+        ],
+        "clients": ["<a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>"],
+        "website": {
+          "name": "sp.elle.co.jp/fashion/features/2013sstrend",
+          "href": "http://sp.elle.co.jp/fashion/features/2013sstrend/"
+        }
+    },
+    {
+        "uid": "elle2012ss",
+        "date": "10 Oct 2012",
+        "title": ["ELLE Trend A to Z"],
+        "toptitle": ["ELLE Trend A to Z"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"},
+            {"type": "picture", "path": "5.png"}
+        ],
+        "description_en": "A web based interactive magazine for the Spring & Summer 2012 fashion trends guide by <a href=\"http://www.elle.co.jp/\" target=\"_blank\">ELLE ONLINE</a>. We produced an alphabetically ordered interface using parallax effects to animate text and images.The website is optimised for mobile devices.",
+        "description_ja": "２０１２年春夏のトレンド早分かり、オンライン図鑑。テーマはウェブならではのインタラクティブな雑誌。トレンドを、ＡからZのアルファベット順に閲覧できるインターフェイス。文字と画像がレイヤーを成し絶妙なずれを見せる、パララックス効果による演出を採用しました。タブレット端末などでも快適に閲覧できるように設計しています。",
+        "credits": [
+            "Creative Director: <a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>",
+            "Art Director: Julie Nanbu (RaNa Design)",
+            "Front-end Engineer: Naoki Sekiguchi",
+            "Designer: Tomoko Suzuki (RaNa Design)",
+            "Project Manager: Ikuko Matsuda (RaNa Design)",
+            "Copy Writer: <a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>",
+            "Photographer: <a href=\"http://www.yoshiharuota.com/\" target=\"_blank\">Yoshiharu Ota</a>"
+        ],
+        "clients": ["<a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>"],
+        "website": {
+          "name": "sp.elle.co.jp/fashion/features/2012sstrend",
+          "href": "http://sp.elle.co.jp/fashion/features/2012sstrend/"
+        }
+    },
+
+    {
+        "uid": "elle2012aw",
+        "date": "10 Oct 2012",
+        "title": ["ELLE TREND10 2012 A/W"],
+        "toptitle": ["ELLE TREND10 2012 A/W"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"},
+            {"type": "picture", "path": "3.jpg"},
+            {"type": "picture", "path": "4.jpg"}
+        ],
+        "description_en": "Issue two of the web based interactive magazine for the Autumn & Winter 2012 fashion trends guide by <a href=\"http://www.elle.co.jp/\" target=\"_blank\">ELLE ONLINE</a>. An image of a model is divided into 10 parts, by clicking each part the user is lead to a more detailed page, as if intuitively reading a magazine and checking out the clothes. The motion of zooming in and out whilst browsing the website creates a more dynamic experience for the user. We incorporated scalable vector graphics into the top page to create smoother motion. The website is optimised for mobile devices.",
+        "description_ja": "<a href=\"http://www.elle.co.jp/\" target=\"_blank\">エル・オンライン</a>編集部発・動くトレンドカタログの第２弾。２０１２秋冬トレンドの大解剖コンテンツ。トレンドをリアルな視点でひも解くテーマに則り、躍動感のあるレイアウト・動きを目指しました。モデルのスタイリングを10パーツに分け、各パーツをクリックするとさらに詳細ページで雑誌のように商品を閲覧できます。ズームイン／アウトによってダイナミックに遷移する仕組みにしました。トップページでは、SVGを利用することによってスムーズな演出を実現しています。タブレット端末などでも快適に閲覧できるように設計しています。",
+        "credits": [
+            "Creative Direction: <a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>",
+            "Art Director: Julie Nanbu (RaNa Design)",
+            "Front-end Enginer: Naoki Sekiguchi",
+            "Designer: Tomoko Suzuki (RaNa Design)",
+            "Project Manager: Ikuko Matsuda (RaNa Design)",
+            "Photographer: <a href=\"http://www.yoshiharuota.com/\" target=\"_blank\">Yoshiharu Ota</a>",
+            "Copy Write: <a href=\"http://www.hearst.co.jp/\" target=\"_blank\">Hearst Fujingaho</a>"
+        ],
+        "clients": ["<a href=\"http://www.hearst.co.jp/\">Hearst Fujingaho</a>"],
+        "website": {
+          "name": "sp.elle.co.jp/fashion/features/2012awtrend",
+          "href": "http://sp.elle.co.jp/fashion/features/2012awtrend/"
+        }
+    },
+    {
+        "uid": "docomo-palette-ui",
+        "date": "01 Nov 2011",
+        "title": ["DOCOMO Palette UI Promotional Website"],
+        "toptitle": ["DOCOMO Pallete UI"],
+        "topsize": "small",
+        "top_visual": "0.jpg",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"}
+        ],
+        "description_ja": "ドコモオリジナルのユーザーインターフェイス「Palette UI」のプロモーションウェブサイトを制作しました。「DOCOMO Palette UI Installation」とコンセプトを統一し、シンプル且つダイナミックな動きのある演出で表現しました。サイト内では、「Palette UI」を忠実に再現したバーチャル体験コーナーを設置。実際の機能をサイト内でさわって体験していただけます。",
+        "credits": [
+            "Creative Direction: <a href=\"http://www.w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>",
+            "Art Director: Jurie Nanbu (RaNa Design)",
+            "Technical Director: Masahide Yoshida",
+            "Developer: Yasuo Kaneda, Shinobu Tanno",
+            "Front-end Engineer: Keisuke Yamamoto",
+            "Director: Kei Okazaki (RaNa Design)",
+            "Designer: Jurie Nanbu (RaNa Design), Masayo Kondo (RaNa Design)",
+            "Producer: Tsuyoshi Sato (RaNa Design)",
+            "Sound Designer: <a href=\"http://hatanakamasato.net/\" target=\"_blank\">Masato Hatanaka</a>"
+        ],
+        "clients": ["<a href=\"https://www.nttdocomo.co.jp/\" target=\"_blank\">NTT DOCOMO</a>"],
+        "relateds": ["<a href=\"/works/docomo-palette\">DOCOMO Palette UI Installation</a>"]
+    }
+]
