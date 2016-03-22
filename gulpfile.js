@@ -1,9 +1,11 @@
 'use strict';
 var gulp = require('gulp');
+var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var webpack = require('gulp-webpack');
 var nib = require('nib')
 var browserSync = require('browser-sync');
+var notify = require("gulp-notify");
 
 var PATHS = {
   jade: [ 'src/jade/**/*.jade' ],
@@ -22,14 +24,26 @@ var PATHS = {
   cssDir: './css',
 };
 
+var errorHandler = function (e) {
+  var args = Array.prototype.slice.call(arguments);
+  notify.onError({
+    title: "Compile Error",
+    message: "<%= error %>",
+    sound: false
+  }).apply(this, args);
+  this.emit("end");
+};
+
 gulp.task('jade', function () {
   gulp.src(PATHS.jadeEntry)
-    .pipe(jade())
+    .pipe(jade({ pretty: true }))
+    .on("error", errorHandler)
     .pipe(gulp.dest(PATHS.htmlDir));
 });
 gulp.task('stylus', function () {
   gulp.src(PATHS.stylusEntry)
     .pipe(stylus({ use: [ nib() ] }))
+    .on("error", errorHandler)
     .pipe(gulp.dest(PATHS.cssDir))
 });
 gulp.task('build', function () {
@@ -63,20 +77,14 @@ gulp.task('default', function () {
       baseDir: "./",
       middleware: [
         function (req, res, next) {
-          var msg = req.method;
-          msg += " ";
-          msg += req.url;
-          msg += "  ";
-          msg += req.statusCode;
-          msg += " ";
-          msg += req.statusMessage;
+          var msg = req.method + " " + req.url;
           console.log(msg);
           next();
         }
       ]
     }
   });
-  gulp.watch('./src/stylus/*.jade', [ 'jade' ]);
-  gulp.watch('./src/stylus/*.styl', [ 'stylus' ]);
+  gulp.watch(PATHS.jade, [ 'jade' ]);
+  gulp.watch(PATHS.stylus, [ 'stylus' ]);
   gulp.watch(PATHS.jsx, [ "build" ]);
 });
