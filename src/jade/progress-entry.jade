@@ -1,0 +1,27 @@
+extends ./_base
+
+block ogtag
+  meta(property="og:url" content="http://www.ranagram.com/progress/{{ work.postid }}")
+  meta(property="og:title" content="{{ work.title }}")
+  meta(property="og:image" content="{{ work.photos.0 }}")
+  meta(property="og:description" content="{{ work.texts|striptags }}")
+
+block content
+  //
+    {% ifequal work.type "photo" %}
+    <section class="progress photo" id="post{{ work.postid }}">
+      <div class="visual">
+        {% for url in work.photos %}
+        <img class="picture" src="{{ url }}" alt=""/>
+        {% endfor %}
+      </div>
+      <div class="texts">{{ work.texts|safe }}</div>
+      <div class="date">{{ work.date }}</div>
+    </section>
+    {% endifequal %}
+    {% ifequal work.type "text" %}
+    <section class="progress photo" id="post{{ work.postid }}">
+      <div class="texts">{{ work.texts|safe }}</div>
+      <div class="date">{{ work.date }}</div>
+    </section>
+    {% endifequal %}

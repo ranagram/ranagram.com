@@ -1,0 +1,24 @@
+extends ./_base
+
+block content
+  //
+    {% for work in works %}
+    {% ifequal work.type "photo" %}
+    <section class="progress photo" id="post{{ work.postid }}">
+      <div class="visual">
+        {% for url in work.photos %}
+        {% if forloop.first %}<a href="/progress/{{ work.postid }}">{% endif %}<img class="picture" src="{{ url }}" alt=""/>{% if forloop.first %}</a>{% endif %}
+        {% endfor %}
+        </div>
+      <div class="texts">{{ work.texts|safe }}</div>
+      <div class="date">{{ work.date }}</div>
+    </section>
+    {% endifequal %}
+    {% ifequal work.type "text" %}
+    <section class="progress photo" id="post{{ work.postid }}">
+      <div class="texts">{{ work.texts|safe }}</div>
+      <div class="date">{{ work.date }}</div>
+    </section>
+    {% endifequal %}
+
+    {% endfor %}
