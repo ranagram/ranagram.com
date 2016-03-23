@@ -7,21 +7,22 @@ block ogtag
   meta(property="og:description" content="{{ work.texts|striptags }}")
 
 block content
-  //
-    {% ifequal work.type "photo" %}
-    <section class="progress photo" id="post{{ work.postid }}">
-      <div class="visual">
-        {% for url in work.photos %}
-        <img class="picture" src="{{ url }}" alt=""/>
-        {% endfor %}
-      </div>
-      <div class="texts">{{ work.texts|safe }}</div>
-      <div class="date">{{ work.date }}</div>
+  #content
+  script(type="text/template").
+    <% if (work.type === "photo") { %>
+      <section class="progress photo" id="post<%- work.postid %>">
+        <div class="visual">
+          <% work.photos.forEach(function (url) { %>
+          <img class="picture" src="<%- url %>" alt="" />
+          <% }); %>
+        </div>
+        <div class="texts"><%= work.texts %></div>
+        <div class="date"><%- work.date %></div>
+      </section>
+    <% } %>
+    <% if (work.type === "text") { %>
+    <section class="progress photo" id="post<%- work.postid %>">
+      <div class="texts"><%= work.texts %></div>
+      <div class="date"><%- work.date %></div>
     </section>
-    {% endifequal %}
-    {% ifequal work.type "text" %}
-    <section class="progress photo" id="post{{ work.postid }}">
-      <div class="texts">{{ work.texts|safe }}</div>
-      <div class="date">{{ work.date }}</div>
-    </section>
-    {% endifequal %}
+    <% } %>

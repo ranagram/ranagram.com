@@ -53,21 +53,23 @@
           <path d="M7.9131,9.5688c-3.2241,0-5.7509-1.4048-5.7509-3.2011c0-0.1778,0.143-0.3199,0.3227-0.3199 c0.1792,0,0.3232,0.1421,0.3232,0.3199c0,1.3872,2.3389,2.5532,5.105,2.5532c2.7681,0,5.105-1.166,5.105-2.5532 c0-0.1778,0.145-0.3199,0.3252-0.3199c0.1768,0,0.3228,0.1421,0.3228,0.3199C13.6661,8.164,11.1392,9.5688,7.9131,9.5688" class="st0"></path>
         </svg></a>
     </header>
-    <ul class="works large">
-      <!--{% for work in large %}-->
-      <!--<li><a href="/works/{{ work.uid }}">-->
-      <!--  <img src="/static/imgs/works/{{ work.uid }}/top.jpg" alt=""/>-->
-      <!--  <p>{{ work.toptitle|join:"<br/>" }}</p>-->
-      <!--</a></li>-->
-      <!--{% endfor %}-->
-    </ul>
-    <ul class="works small">
-      <!--{% for work in small %}-->
-      <!--<li><a href="/works/{{ work.uid }}">-->
-      <!--  <img src="/static/imgs/works/{{ work.uid }}/top.jpg" alt=""/>-->
-      <!--  <p>{{ work.toptitle|join:"<br/>" }}</p>-->
-      <!--</a></li>-->
-      <!--{% endfor %}-->
-    </ul>
+    <ul class="works large"></ul>
+    <script type="text/template">
+      <% large.forEach(function (work) { %>
+        <li><a href="/works/<%- work.uid %>">
+        <img src="/static/imgs/works/<%- work.uid %>/top.jpg" alt="" />
+        <p><% work.toptitle.join("<br/>"); %></p>
+        </a></li>
+      <% }); %>
+    </script>
+    <ul class="works small"></ul>
+    <script type="text/template">
+      <% small.forEach(function (work) { %>
+        <li><a href="/works/<%- work.uid %>">
+          <img src="/static/imgs/works/<%- work.uid %>/top.jpg" alt=""/>
+          <p><% work.toptitle.join("<br/>"); %></p>
+        </a></li>
+      <% }); %>
+    </script>
   </div>
 </body>
