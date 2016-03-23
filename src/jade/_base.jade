@@ -19,19 +19,20 @@ head
   block ogtag
     meta(property="og:url" content="http://www.ranagram.com/")
     meta(property="og:title" content="RANAGRAM")
-    meta(property="og:image" content="http://www.ranagram.com/static/imgs/og.png")
+    meta(property="og:image" content="http://www.ranagram.com/imgs/og.png")
     meta(property="og:description" content="RANAGRAM is a research and development division of interactive design company RaNa design associates based in Tokyo. Established in 2012 for the exploration of diverse creative fields.")
-  link(rel="shortcut icon" href="/static/imgs/favicon.gif")
-  link(href="/static/css/style.css" media="screen, projection" rel="stylesheet")
+  link(rel="shortcut icon" href="/imgs/favicon.gif")
+  link(href="/css/style.css" media="screen, projection" rel="stylesheet")
   link(href="http://fonts.googleapis.com/css?family=Source+Code+Pro:500,700" rel="stylesheet")
 
   block script_before
-  script(src="/static/js/lib/jquery.js")
-  script(src="/static/js/lib/jquery.easing.js")
-  script(src="/static/js/lib/underscore.js")
-  script(src="/static/js/lib/backbone.js")
-  script(src="/static/js/lib/ff.js")
-  script(src="/static/js/main.js")
+  script(src="/js/lib/react-with-addons.js")
+  //script(src="/js/lib/jquery.js")
+  //script(src="/js/lib/jquery.easing.js")
+  //script(src="/js/lib/underscore.js")
+  //script(src="/js/lib/backbone.js")
+  //script(src="/js/lib/ff.js")
+  script(src="/js/main.js")
   block script_after
   script.
     var _gaq = _gaq || [];
@@ -77,4 +78,5 @@ body
           path(class="st0" d="M2.8931,3.3848c0.5161,0,0.9341-0.42,0.9341-0.9371c0-0.518-0.418-0.936-0.9341-0.936 c-0.521,0-0.937,0.418-0.937,0.936C1.9561,2.9648,2.3721,3.3848,2.8931,3.3848")
           path(class="st0" d="M12.9346,3.3848c-0.5151,0-0.937-0.42-0.937-0.9371c0-0.518,0.4219-0.936,0.937-0.936 c0.5181,0,0.937,0.418,0.937,0.936C13.8716,2.9648,13.4527,3.3848,12.9346,3.3848")
           path(class="st0" d="M7.9131,9.5688c-3.2241,0-5.7509-1.4048-5.7509-3.2011c0-0.1778,0.143-0.3199,0.3227-0.3199 c0.1792,0,0.3232,0.1421,0.3232,0.3199c0,1.3872,2.3389,2.5532,5.105,2.5532c2.7681,0,5.105-1.166,5.105-2.5532 c0-0.1778,0.145-0.3199,0.3252-0.3199c0.1768,0,0.3228,0.1421,0.3228,0.3199C13.6661,8.164,11.1392,9.5688,7.9131,9.5688")
-    block content
+    #content
+      block content

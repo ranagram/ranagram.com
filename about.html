@@ -16,18 +16,19 @@
   <meta name="description" content="RANAGRAM is a research and development division of interactive design company RaNa design associates based in Tokyo. Established in 2012 for the exploration of diverse creative fields.">
   <meta property="og:url" content="http://www.ranagram.com/">
   <meta property="og:title" content="RANAGRAM">
-  <meta property="og:image" content="http://www.ranagram.com/static/imgs/og.png">
+  <meta property="og:image" content="http://www.ranagram.com/imgs/og.png">
   <meta property="og:description" content="RANAGRAM is a research and development division of interactive design company RaNa design associates based in Tokyo. Established in 2012 for the exploration of diverse creative fields.">
-  <link rel="shortcut icon" href="/static/imgs/favicon.gif">
-  <link href="/static/css/style.css" media="screen, projection" rel="stylesheet">
+  <link rel="shortcut icon" href="/imgs/favicon.gif">
+  <link href="/css/style.css" media="screen, projection" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:500,700" rel="stylesheet">
   <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
-  <script src="/static/js/lib/jquery.js"></script>
-  <script src="/static/js/lib/jquery.easing.js"></script>
-  <script src="/static/js/lib/underscore.js"></script>
-  <script src="/static/js/lib/backbone.js"></script>
-  <script src="/static/js/lib/ff.js"></script>
-  <script src="/static/js/main.js"></script>
+  <script src="/js/lib/react-with-addons.js"></script>
+  <!--script(src="/js/lib/jquery.js")-->
+  <!--script(src="/js/lib/jquery.easing.js")-->
+  <!--script(src="/js/lib/underscore.js")-->
+  <!--script(src="/js/lib/backbone.js")-->
+  <!--script(src="/js/lib/ff.js")-->
+  <script src="/js/main.js"></script>
   <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34716668-1']);
@@ -54,45 +55,47 @@
           <path d="M7.9131,9.5688c-3.2241,0-5.7509-1.4048-5.7509-3.2011c0-0.1778,0.143-0.3199,0.3227-0.3199 c0.1792,0,0.3232,0.1421,0.3232,0.3199c0,1.3872,2.3389,2.5532,5.105,2.5532c2.7681,0,5.105-1.166,5.105-2.5532 c0-0.1778,0.145-0.3199,0.3252-0.3199c0.1768,0,0.3228,0.1421,0.3228,0.3199C13.6661,8.164,11.1392,9.5688,7.9131,9.5688" class="st0"></path>
         </svg></a>
     </header>
-    <section class="map">
-      <div id="map_canvas"></div>
-    </section>
-    <section class="concept">
-      <div class="en">
-        <p>RANAGRAM is a research and development division of interactive design company<a href="http://www.ranadesign.com/" target="_blank">RaNa design associates</a>based in Tokyo. Established in 2012 for the exploration of diverse creative fields.</p>
-        <p>If you are intersted in working with us please send your CV and work samples to<a href="mailto:info&#64;ranagram.com">info&#64;ranagram.com</a>.</p>
-        <p>Please feel free to get in touch, collaborations are always welcome.</p>
-      </div>
-      <div class="jp">
-        <p>２０１２年４月、<a href="http://www.ranadesign.com/" target="_blank">ラナデザインアソシエイツ</a>からテクノロジーを主軸とした表現を追求する事業部として独立。空間演出、フィジカル・コンピューティング、ウェブなどメディアを問わずさまざまな視点から創作へのアプローチを試みています。</p>
-        <p>ラナグラムでは、常時人材を募集しています。応募を希望される方は、履歴書とポートフォリオを志望動機とともに、<a href="mailto:info&#64;ranagram.com">メール</a>にてご送付ください。</p>
-      </div>
-    </section>
-    <section class="what_we_do">
-      <h1>WHAT WE DO</h1>
-      <ul>
-        <li>Installation and Space Design</li>
-        <li>Concert Visuals and Stage Design</li>
-        <li>UI and UX Design</li>
-        <li>Web and Mobile Design / Development</li>
-      </ul>
-    </section>
-    <section class="contact">
-      <h1>CONTACT</h1>
-      <ul>
-        <li>401 3-3-32 Sendagaya, Shibuya, Tokyo<br>151-0051 JAPAN</li>
-        <li>P: +81(0)3 6890 0775</li>
-        <li>F: +81(0)3 6890 0776</li>
-        <li>M:<a href="mailto:info&#64;ranagram.com">info&#64;ranagram.com</a></li>
-      </ul>
-    </section>
-    <section class="group">
-      <h1>RANA GROUP</h1>
-      <ul>
-        <li><a href="http://www.ranadesign.com/" target="_blank">RaNa design associates, inc.</a></li>
-        <li><a href="http://www.ranaextractive.com/" target="_blank">RaNa extractive, inc.</a></li>
-        <li><a href="http://www.rana007.com/" target="_blank">RANA007</a></li>
-      </ul>
-    </section>
+    <div id="content">
+      <section class="map">
+        <div id="map_canvas"></div>
+      </section>
+      <section class="concept">
+        <div class="en">
+          <p>RANAGRAM is a research and development division of interactive design company<a href="http://www.ranadesign.com/" target="_blank">RaNa design associates</a>based in Tokyo. Established in 2012 for the exploration of diverse creative fields.</p>
+          <p>If you are intersted in working with us please send your CV and work samples to<a href="mailto:info&#64;ranagram.com">info&#64;ranagram.com</a>.</p>
+          <p>Please feel free to get in touch, collaborations are always welcome.</p>
+        </div>
+        <div class="jp">
+          <p>２０１２年４月、<a href="http://www.ranadesign.com/" target="_blank">ラナデザインアソシエイツ</a>からテクノロジーを主軸とした表現を追求する事業部として独立。空間演出、フィジカル・コンピューティング、ウェブなどメディアを問わずさまざまな視点から創作へのアプローチを試みています。</p>
+          <p>ラナグラムでは、常時人材を募集しています。応募を希望される方は、履歴書とポートフォリオを志望動機とともに、<a href="mailto:info&#64;ranagram.com">メール</a>にてご送付ください。</p>
+        </div>
+      </section>
+      <section class="what_we_do">
+        <h1>WHAT WE DO</h1>
+        <ul>
+          <li>Installation and Space Design</li>
+          <li>Concert Visuals and Stage Design</li>
+          <li>UI and UX Design</li>
+          <li>Web and Mobile Design / Development</li>
+        </ul>
+      </section>
+      <section class="contact">
+        <h1>CONTACT</h1>
+        <ul>
+          <li>401 3-3-32 Sendagaya, Shibuya, Tokyo<br>151-0051 JAPAN</li>
+          <li>P: +81(0)3 6890 0775</li>
+          <li>F: +81(0)3 6890 0776</li>
+          <li>M:<a href="mailto:info&#64;ranagram.com">info&#64;ranagram.com</a></li>
+        </ul>
+      </section>
+      <section class="group">
+        <h1>RANA GROUP</h1>
+        <ul>
+          <li><a href="http://www.ranadesign.com/" target="_blank">RaNa design associates, inc.</a></li>
+          <li><a href="http://www.ranaextractive.com/" target="_blank">RaNa extractive, inc.</a></li>
+          <li><a href="http://www.rana007.com/" target="_blank">RANA007</a></li>
+        </ul>
+      </section>
+    </div>
   </div>
 </body>

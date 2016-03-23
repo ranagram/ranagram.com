@@ -18,15 +18,16 @@
   <meta property="og:title" content="{{ work.title|join:' ' }}">
   <meta property="og:image" content="http://www.ranagram.com/static/imgs/works/{{ work.uid }}/top.jpg">
   <meta property="og:description" content="{{ work.description_en|striptags }}">
-  <link rel="shortcut icon" href="/static/imgs/favicon.gif">
-  <link href="/static/css/style.css" media="screen, projection" rel="stylesheet">
+  <link rel="shortcut icon" href="/imgs/favicon.gif">
+  <link href="/css/style.css" media="screen, projection" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:500,700" rel="stylesheet">
-  <script src="/static/js/lib/jquery.js"></script>
-  <script src="/static/js/lib/jquery.easing.js"></script>
-  <script src="/static/js/lib/underscore.js"></script>
-  <script src="/static/js/lib/backbone.js"></script>
-  <script src="/static/js/lib/ff.js"></script>
-  <script src="/static/js/main.js"></script>
+  <script src="/js/lib/react-with-addons.js"></script>
+  <!--script(src="/js/lib/jquery.js")-->
+  <!--script(src="/js/lib/jquery.easing.js")-->
+  <!--script(src="/js/lib/underscore.js")-->
+  <!--script(src="/js/lib/backbone.js")-->
+  <!--script(src="/js/lib/ff.js")-->
+  <script src="/js/main.js"></script>
   <script>
     var _gaq = _gaq || [];
     _gaq.push(['_setAccount', 'UA-34716668-1']);
@@ -53,182 +54,184 @@
           <path d="M7.9131,9.5688c-3.2241,0-5.7509-1.4048-5.7509-3.2011c0-0.1778,0.143-0.3199,0.3227-0.3199 c0.1792,0,0.3232,0.1421,0.3232,0.3199c0,1.3872,2.3389,2.5532,5.105,2.5532c2.7681,0,5.105-1.166,5.105-2.5532 c0-0.1778,0.145-0.3199,0.3252-0.3199c0.1768,0,0.3228,0.1421,0.3228,0.3199C13.6661,8.164,11.1392,9.5688,7.9131,9.5688" class="st0"></path>
         </svg></a>
     </header>
-    <section class="work">
-      <div id="visual" class="visual"></div>
-      <script type="text/template" id="tmpl-visual">
-        <% if (work.top_visual) { %>
-          <img class="picture" src="/imgs/works/<%- work.uid %>/<%- work.top_visual %>" alt="" />
-        <% } %>
-        <% if (work.top_visuals) { %>
-          <% work.top_visuals.forEach(function (v) { %>
-            <img class="picture" src="/static/imgs/works/<%- work.uid %>/<%- v %>" alt=""/>
+    <div id="content">
+      <section class="work">
+        <div id="visual" class="visual"></div>
+        <script type="text/template" id="tmpl-visual">
+          <% if (work.top_visual) { %>
+            <img class="picture" src="/imgs/works/<%- work.uid %>/<%- work.top_visual %>" alt="" />
+          <% } %>
+          <% if (work.top_visuals) { %>
+            <% work.top_visuals.forEach(function (v) { %>
+              <img class="picture" src="/static/imgs/works/<%- work.uid %>/<%- v %>" alt=""/>
+            <% }); %>
+          <% } %>
+          <% if (work.youtube_id) { %>
+            <div class="video">
+              <iframe width="840" height="473"
+                src="//www.youtube.com/embed/<%- work.youtube_id %>?rel=0&amp;showinfo=0"
+                frameborder="0" allowfullscreen></iframe>
+              </div>
+          <% } %>
+          <% if (work.video_id) { %>
+            <div class="video">
+              <iframe class="vimeo"
+                src="http://player.vimeo.com/video/<%- work.video_id %>?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=222222"
+                width="840" height="472" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                allowFullScreen></iframe>
+              </div>
+          <% } %>
+          
+        </script>
+        <div id="info" class="info"></div>
+        <script type="text/template" id="tmpl-info">
+          <h1><% print(work.title.join("<br/>")); %></h1>
+          <div class="texts">
+            <% if (work.description_en) { %>
+              <p class="en"><%= work.description_en %></p>
+            <% } %>
+            <% if (work.description_ja) { %>
+              <p class="jp"><%= work.description_ja %></p>
+            <% } %>
+          
+        </script>
+        <div id="visual2" class="visual"></div>
+        <script type="text/template" id="tmpl-visual2">
+          <% work.main_visuals.forEach(function (obj) { %>
+            <% if (obj.type === "picture") { %>
+              <img class="picture" src="/static/imgs/works/<%- work.uid %>/<%- obj.path %>" alt=""/>
+            <% } else { %>
+              <iframe class="vimeo"
+                src="http://player.vimeo.com/video/<%- obj.path %>?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=222222"
+                width="840" height="472" frameborder="0" webkitAllowFullScreen mozallowfullscreen
+                allowFullScreen></iframe>
+            <% } %>
           <% }); %>
-        <% } %>
-        <% if (work.youtube_id) { %>
-          <div class="video">
-            <iframe width="840" height="473"
-              src="//www.youtube.com/embed/<%- work.youtube_id %>?rel=0&amp;showinfo=0"
-              frameborder="0" allowfullscreen></iframe>
-            </div>
-        <% } %>
-        <% if (work.video_id) { %>
-          <div class="video">
-            <iframe class="vimeo"
-              src="http://player.vimeo.com/video/<%- work.video_id %>?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=222222"
-              width="840" height="472" frameborder="0" webkitAllowFullScreen mozallowfullscreen
-              allowFullScreen></iframe>
-            </div>
-        <% } %>
-        
-      </script>
-      <div id="info" class="info"></div>
-      <script type="text/template" id="tmpl-info">
-        <h1><% print(work.title.join("<br/>")); %></h1>
-        <div class="texts">
-          <% if (work.description_en) { %>
-            <p class="en"><%= work.description_en %></p>
-          <% } %>
-          <% if (work.description_ja) { %>
-            <p class="jp"><%= work.description_ja %></p>
-          <% } %>
-        
-      </script>
-      <div id="visual2" class="visual"></div>
-      <script type="text/template" id="tmpl-visual2">
-        <% work.main_visuals.forEach(function (obj) { %>
-          <% if (obj.type === "picture") { %>
-            <img class="picture" src="/static/imgs/works/<%- work.uid %>/<%- obj.path %>" alt=""/>
-          <% } else { %>
-            <iframe class="vimeo"
-              src="http://player.vimeo.com/video/<%- obj.path %>?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=222222"
-              width="840" height="472" frameborder="0" webkitAllowFullScreen mozallowfullscreen
-              allowFullScreen></iframe>
-          <% } %>
-        <% }); %>
-        
-      </script>
-      <div class="info"></div>
-      <script type="text/template" id="tmpl-info">
-        <% if (work.workshop) { %>
-          <section class="workshop">
-            <h1>Digital Craft Workshop</h1>
-            <ul>
-              <% work.workshop.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.credits) { %>
-          <section class="credits">
-            <h1>CREDIT</h1>
-            <ul>
-              <% work.credits.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
+          
+        </script>
+        <div class="info"></div>
+        <script type="text/template" id="tmpl-info">
+          <% if (work.workshop) { %>
+            <section class="workshop">
+              <h1>Digital Craft Workshop</h1>
+              <ul>
+                <% work.workshop.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
             </section>
-        <% } %>
-        
-        <% if (work.ranagram) { %>
-          <section class="ranagram">
-            <h1>STAFF LIST of RANAGRAM</h1>
-            <ul>
-              <% work.ranagram.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.technicals) { %>
-          <section class="technicals">
-            <h1>TECHNICAL SPEC</h1>
-            <ul>
-              <% work.technicals.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.website) { %>
-          <section class="website">
-            <h1>PROJECT WEBSITE</h1>
-            <ul>
-              <li><a href="<%- work.website.href %>" target="_blank"><%- work.website.name %></a></li>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.clients) { %>
-          <section class="credits">
-            <h1>CLIENT</h1>
-            <ul>
-              <% work.clients.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.relateds) { %>
-          <section class="relateds">
-            <h1>RELATED PROJECTS</h1>
-            <ul>
-              <% work.relateds.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.lovol_exhibitions) { %>
-          <section class="exhibitions">
-            <h1>LOVOL EXHIBITION</h1>
-            <ul>
-              <% work.lovol_exhibitions.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        
-        <% if (work.neon_light_installation) { %>
-          <section class="credits">
-            <h1>Neon Light Installation</h1>
-            <ul>
-              <% work.neon_light_installation.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.spatial_design) { %>
-          <section class="credits">
-            <h1>Spatial Design</h1>
-            <ul>
-              <% work.spatial_design.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-        
-        <% if (work.exhibitions) { %>
-          <section class="exhibitions">
-            <h1>EXHIBITION</h1>
-            <ul>
-              <% work.exhibitions.forEach(function (v) { %>
-                <li><%= v %></li>
-              <% }); %>
-            </ul>
-          </section>
-        <% } %>
-      </script>
-    </section>
+          <% } %>
+          
+          <% if (work.credits) { %>
+            <section class="credits">
+              <h1>CREDIT</h1>
+              <ul>
+                <% work.credits.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+              </section>
+          <% } %>
+          
+          <% if (work.ranagram) { %>
+            <section class="ranagram">
+              <h1>STAFF LIST of RANAGRAM</h1>
+              <ul>
+                <% work.ranagram.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+          
+          <% if (work.technicals) { %>
+            <section class="technicals">
+              <h1>TECHNICAL SPEC</h1>
+              <ul>
+                <% work.technicals.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+          
+          <% if (work.website) { %>
+            <section class="website">
+              <h1>PROJECT WEBSITE</h1>
+              <ul>
+                <li><a href="<%- work.website.href %>" target="_blank"><%- work.website.name %></a></li>
+              </ul>
+            </section>
+          <% } %>
+          
+          <% if (work.clients) { %>
+            <section class="credits">
+              <h1>CLIENT</h1>
+              <ul>
+                <% work.clients.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+          
+          <% if (work.relateds) { %>
+            <section class="relateds">
+              <h1>RELATED PROJECTS</h1>
+              <ul>
+                <% work.relateds.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+          
+          <% if (work.lovol_exhibitions) { %>
+            <section class="exhibitions">
+              <h1>LOVOL EXHIBITION</h1>
+              <ul>
+                <% work.lovol_exhibitions.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+          
+          
+          <% if (work.neon_light_installation) { %>
+            <section class="credits">
+              <h1>Neon Light Installation</h1>
+              <ul>
+                <% work.neon_light_installation.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+          
+          <% if (work.spatial_design) { %>
+            <section class="credits">
+              <h1>Spatial Design</h1>
+              <ul>
+                <% work.spatial_design.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+          
+          <% if (work.exhibitions) { %>
+            <section class="exhibitions">
+              <h1>EXHIBITION</h1>
+              <ul>
+                <% work.exhibitions.forEach(function (v) { %>
+                  <li><%= v %></li>
+                <% }); %>
+              </ul>
+            </section>
+          <% } %>
+        </script>
+      </section>
+    </div>
   </div>
 </body>
