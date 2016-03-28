@@ -64,6 +64,7 @@ gulp.task('build', function () {
         'immutable': 'Immutable',
       }
     }))
+    .on("error", errorHandler)
     .pipe(gulp.dest(PATHS.jsDir))
     .pipe(browserSync.stream());
 });
