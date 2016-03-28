@@ -7,14 +7,14 @@ import Dispatcher from "../dispatcher.jsx";
 class WorkStore extends ReduceStore {
   getInitialState () {
     return Immutable.Map({
-      foo: "foooo"
+      works: []
     });
   }
 
   reduce (state, action) {
     switch (action.type) {
       case "fetch":
-        return { foo: "bar" };
+        return Immutable.Map({ works: action.data });
         break;
       case "remove":
         return { piyo: "moge" };
