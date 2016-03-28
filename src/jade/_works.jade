@@ -1,0 +1,115 @@
+extends ./_base
+
+block ogtag
+  meta(property="og:url" content="http://www.ranagram.com/works/" + uid)
+  meta(property="og:title" content=title.join(' '))
+  meta(property="og:image" content="http://www.ranagram.com/imgs/works/" + uid + "/top.jpg")
+  meta(property="og:description" content=description_en)
+
+block content
+  section.work
+    .visual
+      if top_visual
+        img.picture(src="/imgs/works/" + uid +"/" + top_visual alt="")
+      if top_visuals
+        each v in top_visuals
+          img.picture(src="/imgs/works/" + uid + "/" + v alt="")
+      if youtube_id
+        div.video
+          iframe(width="840" height="473" src="//www.youtube.com/embed/" + youtube_id + "?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen)
+      if video_id
+        div.video
+          iframe.vimeo(width="840" height="472" src="http://player.vimeo.com/video/" + video_id + "?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=222222" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+
+    .info#work-info
+      h1!= title.join("<br/>")
+      div.texts
+        if description_en
+          p.en!= description_en
+        if description_ja
+          p.jp!= description_ja
+
+    .visual#work-visual2
+      if main_visuals
+        each v in main_visuals
+          if v.type === "picture"
+            img.picture(src="/imgs/works/" + uid + "/" + v.path alt="")
+          else
+            iframe.vimeo(src="http://player.vimeo.com/video/" + v.path + "?title=0&amp;byline=0&amp;portrait=0&amp;badge=0&amp;color=222222" width="840" height="472" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen)
+
+    .info#work-info2
+      if workshop
+        section.workshop
+          h1 Digital Craft Workshop
+          ul
+            each v in workshop
+              li!= v
+
+      if credits
+        section.credits
+          h1 CREDIT
+          ul
+            each v in credits
+              li!= v
+
+      if ranagram
+        section.ranagram
+          h1 STAFF LIST of RANAGRAM
+          ul
+            each v in ranagram
+              li!= v
+
+      if technicals
+        section.technicals
+          h1 TECHNICAL SPEC
+          ul
+            each v in technicals
+              li!= v
+
+      if website
+        section.website
+          h1 PROJECT WEBSITE
+          ul
+            li: a(href=website.href target="_blank")= website.name
+
+      if clients
+        section.credits
+          h1 CLIENT
+          ul
+            each v in clients
+              li!= v
+
+      if relateds
+        section.relateds
+          h1 RELATED PROJECTS
+          ul
+            each v in relateds
+              li!= v
+
+      if lovol_exhibitions
+        section.exhibitions
+          h1 LOVOL EXHIBITION
+          ul
+            each v in lovol_exhibitions
+              li!= v
+
+      if neon_light_installation
+        section.credits
+          h1 Neon Light Installation
+          ul
+            each v in neon_light_installation
+              li!= v
+
+      if spatial_design
+        section.credits
+          h1 Spatial Design
+          ul
+            each v in spatial_design
+              li!= v
+
+      if exhibitions
+        section.exhibitions
+          h1 EXHIBITION
+          ul
+            each v in exhibitions
+              li!= v

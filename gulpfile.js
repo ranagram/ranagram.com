@@ -5,11 +5,14 @@ var stylus = require('gulp-stylus');
 var webpack = require('gulp-webpack');
 var nib = require('nib')
 var browserSync = require('browser-sync');
-var notify = require("gulp-notify");
+var notify = require('gulp-notify');
+var data = require('gulp-data');
+var rename = require('gulp-rename');
 
 var PATHS = {
   jade: [ 'src/jade/**/*.jade' ],
   jadeEntry: [ 'src/jade/**/!(_)*.jade' ],
+  jadeWork: 'src/jade/_works.jade',
   htmlDir: './',
 
   jsx: [ 'src/jsx/**/*.jsx' ],
@@ -35,13 +38,28 @@ var errorHandler = function (e) {
 };
 
 gulp.task('jade', function () {
-  gulp.src(PATHS.jadeEntry)
+  return gulp.src(PATHS.jadeEntry)
     .pipe(jade({ pretty: true }))
     .on("error", errorHandler)
     .pipe(gulp.dest(PATHS.htmlDir));
 });
+gulp.task('jade-works', function () {
+  var works = require('./data.json');
+  return works.map((work) => {
+    return gulp.src(PATHS.jadeWork)
+      .pipe(data(function (file) { return work; }))
+      .pipe(jade({
+        pretty: true,
+        filename: work.uid + '.html'
+      }))
+      .pipe(rename('index.html'))
+      .on('error', errorHandler)
+      .pipe(gulp.dest(PATHS.htmlDir + '/works/' + work.uid));
+  });
+});
+
 gulp.task('stylus', function () {
-  gulp.src(PATHS.stylusEntry)
+  return gulp.src(PATHS.stylusEntry)
     .pipe(stylus({ use: [ nib() ] }))
     .on("error", errorHandler)
     .pipe(gulp.dest(PATHS.cssDir))
@@ -85,7 +103,7 @@ gulp.task('default', function () {
       ]
     }
   });
-  gulp.watch(PATHS.jade, [ 'jade' ]);
+  gulp.watch(PATHS.jade, [ 'jade', 'jade-works' ]);
   gulp.watch(PATHS.stylus, [ 'stylus' ]);
   gulp.watch(PATHS.jsx, [ "build" ]);
 });
