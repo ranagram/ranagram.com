@@ -7,8 +7,8 @@ block ogtag
   meta(property="og:description" content="{{ work.texts|striptags }}")
 
 block content
-  #content
-  script(type="text/template").
+  #entry-progress
+  script(type="text/template" id="tmpl-entry-progress").
     <% if (work.type === "photo") { %>
       <section class="progress photo" id="post<%- work.postid %>">
         <div class="visual">

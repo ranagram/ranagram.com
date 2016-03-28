@@ -22,6 +22,7 @@
   <link href="/css/style.css" media="screen, projection" rel="stylesheet">
   <link href="http://fonts.googleapis.com/css?family=Source+Code+Pro:500,700" rel="stylesheet">
   <script src="/js/lib/react-with-addons.js"></script>
+  <script src="/js/lib/immutable.min.js"></script>
   <!--script(src="/js/lib/jquery.js")-->
   <!--script(src="/js/lib/jquery.easing.js")-->
   <!--script(src="/js/lib/underscore.js")-->
@@ -56,8 +57,8 @@
     </header>
     <div id="content">
       <section class="work">
-        <div id="visual" class="visual"></div>
-        <script type="text/template" id="tmpl-visual">
+        <div id="work-visual" class="visual"></div>
+        <script type="text/template" id="tmpl-work-visual">
           <% if (work.top_visual) { %>
             <img class="picture" src="/imgs/works/<%- work.uid %>/<%- work.top_visual %>" alt="" />
           <% } %>
@@ -83,8 +84,8 @@
           <% } %>
           
         </script>
-        <div id="info" class="info"></div>
-        <script type="text/template" id="tmpl-info">
+        <div id="work-info" class="info"></div>
+        <script type="text/template" id="tmpl-work-info">
           <h1><% print(work.title.join("<br/>")); %></h1>
           <div class="texts">
             <% if (work.description_en) { %>
@@ -95,8 +96,8 @@
             <% } %>
           
         </script>
-        <div id="visual2" class="visual"></div>
-        <script type="text/template" id="tmpl-visual2">
+        <div id="work-visual2" class="visual"></div>
+        <script type="text/template" id="tmpl-work-visual2">
           <% work.main_visuals.forEach(function (obj) { %>
             <% if (obj.type === "picture") { %>
               <img class="picture" src="/static/imgs/works/<%- work.uid %>/<%- obj.path %>" alt=""/>
@@ -109,8 +110,8 @@
           <% }); %>
           
         </script>
-        <div class="info"></div>
-        <script type="text/template" id="tmpl-info">
+        <div id="work-info2" class="info"></div>
+        <script type="text/template" id="tmpl-work-info2">
           <% if (work.workshop) { %>
             <section class="workshop">
               <h1>Digital Craft Workshop</h1>

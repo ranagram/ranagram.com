@@ -8,8 +8,8 @@ block ogtag
 
 block content
   section.work
-    .visual#visual
-    script(type="text/template" id="tmpl-visual").
+    .visual#work-visual
+    script(type="text/template" id="tmpl-work-visual").
       <% if (work.top_visual) { %>
         <img class="picture" src="/imgs/works/<%- work.uid %>/<%- work.top_visual %>" alt="" />
       <% } %>
@@ -34,8 +34,8 @@ block content
           </div>
       <% } %>
 
-    .info#info
-    script(type="text/template" id="tmpl-info").
+    .info#work-info
+    script(type="text/template" id="tmpl-work-info").
       <h1><% print(work.title.join("<br/>")); %></h1>
       <div class="texts">
         <% if (work.description_en) { %>
@@ -45,8 +45,8 @@ block content
           <p class="jp"><%= work.description_ja %></p>
         <% } %>
 
-    .visual#visual2
-    script(type="text/template" id="tmpl-visual2").
+    .visual#work-visual2
+    script(type="text/template" id="tmpl-work-visual2").
       <% work.main_visuals.forEach(function (obj) { %>
         <% if (obj.type === "picture") { %>
           <img class="picture" src="/static/imgs/works/<%- work.uid %>/<%- obj.path %>" alt=""/>
@@ -58,8 +58,8 @@ block content
         <% } %>
       <% }); %>
 
-    .info
-    script(type="text/template" id="tmpl-info").
+    .info#work-info2
+    script(type="text/template" id="tmpl-work-info2").
       <% if (work.workshop) { %>
         <section class="workshop">
           <h1>Digital Craft Workshop</h1>
