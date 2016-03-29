@@ -1,0 +1,20 @@
+extends ./_base
+
+block content
+  if posts && posts[0]
+    each post in posts
+      if post.type === "photo"
+        section.progress.photo(id="post" + post.id)
+          .visual
+            - for (var i=0, l=post.photos.length; i<l; i++)
+              if (i === 0)
+                a(href="/progress/" + post.id)
+                  img.picture(src=post.photos[i] alt="")
+              else
+                img.picture(src=post.photos[i] alt="")
+          .texts!= post.caption
+          .date= post.date
+      if post.type === "text"
+        section.progress.photo(id="post" + post.id)
+          .texts!= post.caption
+          .date= post.date

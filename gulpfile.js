@@ -8,11 +8,14 @@ var browserSync = require('browser-sync');
 var notify = require('gulp-notify');
 var data = require('gulp-data');
 var rename = require('gulp-rename');
+var tumblr = require('tumblr.js');
 
 var PATHS = {
   jade: [ 'src/jade/**/*.jade' ],
   jadeEntry: [ 'src/jade/**/!(_)*.jade' ],
   jadeWork: 'src/jade/_works.jade',
+  jadeProgressIndex: 'src/jade/_progress.jade',
+  jadeProgressEntry: 'src/jade/_progress-entry.jade',
   htmlDir: './',
 
   jsx: [ 'src/jsx/**/*.jsx' ],
@@ -27,6 +30,10 @@ var PATHS = {
   cssDir: './css',
 };
 
+var tumblrClient = new tumblr.Client({
+  consumer_key: 'kqOF3qpqG94eq5vEN3juzj4GYkUerh61mpRjet2BCKgVjIWUE5',
+});
+
 var errorHandler = function (e) {
   var args = Array.prototype.slice.call(arguments);
   notify.onError({
@@ -35,6 +42,23 @@ var errorHandler = function (e) {
     sound: false
   }).apply(this, args);
   this.emit("end");
+};
+var convertMonthToText = function (monthNum) {
+  switch(monthNum) {
+    case 0: return 'January'; break;
+    case 1: return 'February'; break;
+    case 2: return 'March'; break;
+    case 3: return 'April'; break;
+    case 4: return 'May'; break;
+    case 5: return 'June'; break;
+    case 6: return 'July'; break;
+    case 7: return 'August'; break;
+    case 8: return 'September'; break;
+    case 9: return 'October'; break;
+    case 10: return 'November'; break;
+    case 11: return 'December'; break;
+    default: return monthNum;
+  }
 };
 
 gulp.task('jade', function () {
@@ -45,18 +69,42 @@ gulp.task('jade', function () {
     .on('error', errorHandler)
     .pipe(gulp.dest(PATHS.htmlDir));
 });
-gulp.task('jade-works', function () {
+gulp.task('jade-works', function (cb) {
   var works = require('./data.json');
-  return works.map((work) => {
-    return gulp.src(PATHS.jadeWork)
+  works.map((work) => {
+    gulp.src(PATHS.jadeWork)
       .pipe(data(function (file) { return work; }))
-      .pipe(jade({
-        pretty: true,
-        filename: work.uid + '.html'
-      }))
+      .pipe(jade({ pretty: true }))
       .pipe(rename('index.html'))
       .on('error', errorHandler)
       .pipe(gulp.dest(PATHS.htmlDir + '/works/' + work.uid));
+  });
+  cb();
+});
+gulp.task('jade-progress', function (cb) {
+  tumblrClient.posts('ranagram', { limit: 999 }, function (err, res) {
+    if (err) {
+      console.error(err);
+      cb(err);
+    } else {
+      var posts = res.posts.map((post) => {
+        var date = new Date(post.date);
+        var month = date.getMonth();
+        var year = date.getFullYear();
+        post.date = convertMonthToText(month) + ', ' + year;
+        post.photos = post.photos.map((photo) => {
+          return photo.original_size.url;
+        });
+        return post;
+      });
+      gulp.src(PATHS.jadeProgressIndex)
+        .pipe(data(function (file) { return { posts: posts }; }))
+        .pipe(jade({ pretty: true }))
+        .pipe(rename('index.html'))
+        .on('error', errorHandler)
+        .pipe(gulp.dest(PATHS.htmlDir + '/progress'));
+      cb();
+    }
   });
 });
 
