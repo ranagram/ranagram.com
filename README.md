@@ -18,7 +18,7 @@ $ npm install
 1. At first check remote update
 
     ```
-    $ git pull origin master
+    $ git pull origin gh-pages
     ```
 
 2. Run `$ gulp`
@@ -35,7 +35,7 @@ If you found some errors, return to "3"
 6. Push your changes
 
     ```
-    $ git push origin master
+    $ git push origin gh-pages
     ```
 
 ## How to update "PROGRESS"
@@ -43,7 +43,7 @@ If you found some errors, return to "3"
 1. At first check remote update
 
     ```
-    $ git pull origin master
+    $ git pull origin gh-pages
     ```
 
 2. Post or Edit RANAGRAM entry in [Tumblr](https://www.tumblr.com/)
@@ -60,5 +60,5 @@ If you found some errors, return to "2"
 6. Push your changes
 
     ```
-    $ git push origin master
+    $ git push origin gh-pages
     ```
