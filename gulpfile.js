@@ -95,6 +95,11 @@ gulp.task('jade-progress', function (cb) {
         post.photos = post.photos.map((photo) => {
           return photo.original_size.url;
         });
+        post.title = "RANAGRAM | PROGRESS";
+        if (post.tags && post.tags.length) {
+          post.title += " | " + post.tags.join(',');
+        }
+        console.log('tags:', post.tags);
         return post;
       });
       gulp.src(PATHS.jadeProgressIndex)
@@ -103,6 +108,14 @@ gulp.task('jade-progress', function (cb) {
         .pipe(rename('index.html'))
         .on('error', errorHandler)
         .pipe(gulp.dest(PATHS.htmlDir + '/progress'));
+      posts.forEach((post) => {
+        gulp.src(PATHS.jadeProgressEntry)
+          .pipe(data((file) => { return { post: post } }))
+          .pipe(jade({ pretty: true }))
+          .pipe(rename('index.html'))
+          .on('error', errorHandler)
+          .pipe(gulp.dest(PATHS.htmlDir + '/progress/' + post.id));
+      });
       cb();
     }
   });

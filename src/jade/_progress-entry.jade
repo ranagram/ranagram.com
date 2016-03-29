@@ -1,0 +1,22 @@
+extends ./_base
+block title
+  = post.title
+block ogtag
+  meta(property="og:url" content="http://www.ranagram.com/progress/" + post.id)
+  meta(property="og:title" content=post.title)
+  meta(property="og:image" content=post.photos[0])
+  meta(property="og:description" content=post.caption.replace(/<[^>]+>/g, ''))
+
+block content
+  if post
+    if post.type === "photo"
+      section.progress.photo(id="post" + post.id)
+        .visual
+          - for (var i=0, l=post.photos.length; i<l; i++)
+            img.picture(src=post.photos[i] alt="")
+        .texts!= post.caption
+        .date= post.date
+    if post.type === "text"
+      section.progress.photo(id="post" + post.id)
+        .texts!= post.caption
+        .date= post.date
