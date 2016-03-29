@@ -169,3 +169,4 @@ gulp.task("default", function () {
   gulp.watch(PATHS.stylus, [ "stylus" ]);
   gulp.watch(PATHS.jsx, [ "build" ]);
 });
+gulp.task("deploy", [ "jade", "jade-works", "jade-progress" ]);
