@@ -62,10 +62,6 @@
 
 	var _AppAbout2 = _interopRequireDefault(_AppAbout);
 
-	var _AppWork = __webpack_require__(227);
-
-	var _AppWork2 = _interopRequireDefault(_AppWork);
-
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	window.addEventListener("DOMContentLoaded", function () {
@@ -76,14 +72,10 @@
 	      _reactRouter.Route,
 	      { path: "/", component: _App2.default },
 	      _react2.default.createElement(_reactRouter.Route, { path: "about", component: _AppAbout2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: "about/index.html", component: _AppAbout2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: "progress/", component: _AppWork2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: "progress/index.html", component: _AppWork2.default }),
-	      _react2.default.createElement(_reactRouter.Route, { path: "progress/:id", component: _AppWork2.default })
+	      _react2.default.createElement(_reactRouter.Route, { path: "about/index.html", component: _AppAbout2.default })
 	    )
 	  ), document.getElementById("app"));
 	}, false);
-	//import AppIndex from "./components/AppIndex.jsx";
 
 /***/ },
 /* 1 */
@@ -25685,74 +25677,6 @@
 	}(_react.Component);
 
 	exports.default = AppAbout;
-
-/***/ },
-/* 227 */
-/***/ function(module, exports, __webpack_require__) {
-
-	"use strict";
-
-	Object.defineProperty(exports, "__esModule", {
-	  value: true
-	});
-
-	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-	var _react = __webpack_require__(1);
-
-	var _react2 = _interopRequireDefault(_react);
-
-	var _utils = __webpack_require__(206);
-
-	var _WorkStore = __webpack_require__(222);
-
-	var _WorkStore2 = _interopRequireDefault(_WorkStore);
-
-	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
-
-	var AppWork = function (_Component) {
-	  _inherits(AppWork, _Component);
-
-	  function AppWork() {
-	    _classCallCheck(this, AppWork);
-
-	    return _possibleConstructorReturn(this, Object.getPrototypeOf(AppWork).apply(this, arguments));
-	  }
-
-	  _createClass(AppWork, [{
-	    key: "render",
-	    value: function render() {
-	      return _react2.default.createElement(
-	        "div",
-	        { className: "work" },
-	        "Work"
-	      );
-	    }
-	  }], [{
-	    key: "getStores",
-	    value: function getStores() {
-	      return [_WorkStore2.default];
-	    }
-	  }, {
-	    key: "calculateState",
-	    value: function calculateState(prevState) {
-	      console.log('this.props:', this.props);
-	      return {
-	        foo: "bar"
-	      };
-	    }
-	  }]);
-
-	  return AppWork;
-	}(_react.Component);
-
-	exports.default = _utils.Container.create(AppWork);
 
 /***/ }
 /******/ ]);
