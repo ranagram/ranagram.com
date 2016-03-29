@@ -2,7 +2,7 @@ extends ./_base
 block title
   = post.title
 block ogtag
-  meta(property="og:url" content="http://www.ranagram.com/progress/" + post.id)
+  meta(property="og:url" content="http://www.ranagram.com/progress/" + post.id + "/")
   meta(property="og:title" content=post.title)
   meta(property="og:image" content=post.photos[0])
   meta(property="og:description" content=post.caption.replace(/<[^>]+>/g, ''))
