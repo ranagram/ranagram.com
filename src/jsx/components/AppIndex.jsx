@@ -31,8 +31,6 @@ class AppIndex extends Component {
     WorkActions.fetch();
   }
   render () {
-    console.log('worksLarge in AppIndex.jsx:', this.state.worksLarge);
-    console.log('worksSmall in AppIndex.jsx:', this.state.worksSmall);
     var makeItem = (work) => {
       return (
         <li key={work.uid}>

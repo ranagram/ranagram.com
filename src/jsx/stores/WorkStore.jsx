@@ -16,9 +16,6 @@ class WorkStore extends ReduceStore {
       case "fetch":
         return Immutable.Map({ works: action.data });
         break;
-      case "remove":
-        return { piyo: "moge" };
-        break;
     }
   }
 }
