@@ -1,18 +1,14 @@
 extends ./_base
 block content
-  ul.works.large#list-works-large
-  script(type="text/template" id="tmpl-list-works-large").
-    <% large.forEach(function (work) { %>
-      <li><a href="/works/<%- work.uid %>">
-      <img src="/static/imgs/works/<%- work.uid %>/top.jpg" alt="" />
-      <p><% work.toptitle.join("<br />"); %></p>
-      </a></li>
-    <% }); %>
-  ul.works.small#list-works-small
-  script(type="text/template" id="tmpl-list-works-small").
-    <% small.forEach(function (work) { %>
-      <li><a href="/works/<%- work.uid %>">
-        <img src="/static/imgs/works/<%- work.uid %>/top.jpg" alt=""/>
-        <p><% work.toptitle.join("<br />"); %></p>
-      </a></li>
-    <% }); %>
+  ul.works.large
+    each work in works
+      if work.topsize === "large"
+        li: a(href="/works/" + work.uid + "/")
+          img(src="/imgs/works/" + work.uid + "/top.jpg" alt="")
+          p!= work.toptitle.join("<br />")
+  ul.works.small
+    each work in works
+      if work.topsize === "small"
+        li: a(href="/works/" + work.uid + "/")
+          img(src="/imgs/works/" + work.uid + "/top.jpg" alt="")
+          p!= work.toptitle.join("<br />")

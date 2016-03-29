@@ -38,9 +38,11 @@ var errorHandler = function (e) {
 };
 
 gulp.task('jade', function () {
+  var works = require('./data.json');
   return gulp.src(PATHS.jadeEntry)
+    .pipe(data(function (file) { return { works: works }; }))
     .pipe(jade({ pretty: true }))
-    .on("error", errorHandler)
+    .on('error', errorHandler)
     .pipe(gulp.dest(PATHS.htmlDir));
 });
 gulp.task('jade-works', function () {
