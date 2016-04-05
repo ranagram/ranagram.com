@@ -37,6 +37,36 @@ If you found some errors, return to "3"
     ```
     $ git push origin gh-pages
     ```
+    
+### data.json 
+
+   
+	{
+       "uid": "keyword for the url",
+       "date": "2015",
+       "title": ["title line 1", "title line 2"],
+       "toptitle": ["top title line 1", "top title line 1"],
+       "topsize": "large", // トップ画像サイズ
+       "top_visual": "0.jpg",
+       "video_id": "156825731",
+       "main_visuals": [
+           {"type": "picture", "path": "1.jpg"},
+           {"type": "picture", "path": "2.jpg"},
+           {"type": "picture", "path": "3.jpg"},
+           {"type": "picture", "path": "4.jpg"}
+       ],
+       "description_en": "Description in English",
+       "description_ja": "日本語説明文",
+       "workshop": [
+           "Venue: Ikejiri Institute of Design",
+           "Date: Feb 14, 2016."
+       ],
+       "credits": [
+           "Designer, Facilitator: Nozomi Shirai",
+           "Software Developer, Sound Designer: Masahide Yoshida"
+       ]
+	}
+        
 
 ## How to update "PROGRESS"
 
