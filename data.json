@@ -89,15 +89,15 @@
     {
         "uid": "lux",
         "date": "24 Sep 2014",
-        "title": ["LUX 25th Anniversary ‘Bloom to Shine’"],
-        "toptitle": ["LUX 25th Anniversary ‘Bloom to Shine’"],
+        "title": ["LUX 25th Anniversary “Bloom to Shine”"],
+        "toptitle": ["LUX 25th Anniversary “Bloom to Shine”"],
         "topsize": "large",
         "top_visuals": ["2.jpg", "1.jpg"],
         "main_visuals": [
             {"type": "picture", "path": "3.jpg"},
-            {"type": "picture", "path": "4.jpg"}
+            {"type": "picture", "path": "4.jpg"} 
         ],
-        "description_en": "At Omotesando Hills, the brand of haircare ‘LUX’ organised a participatory event, ‘Bloom to Shine’ to commemorate the 25th anniversary of the release in Japan. We created an interactive installation for the event by making four booths with 66 MicroTiles and LED lights. A Kinect sensor detected a figure of a visitor at each booth and then hi-res 3D motion graphics of stylised plants and jewellery were generated on the background. Visitors were able to see different visuals interactively changing and growing according to their movement and their own image together on the one-way mirror. Images of visitors and backgrounds were automatically filmed by cameras installed at booths, and uploaded to <a href=\"http://www.lux25.jp/\" target=\"_blank\">the official website</a> as motion images. RANAGRAM developed the custom software that generated real-time animated visuals and controlled LED lighting, and the remote system that controlled all four booths in sync.",
+        "description_en": "At Omotesando Hills, the brand of haircare “LUX” organised a participatory event, “Bloom to Shine” to commemorate the 25th anniversary of the release in Japan. We created an interactive installation for the event by making four booths with 66 MicroTiles and LED lights. A Kinect sensor detected a figure of a visitor at each booth and then hi-res 3D motion graphics of stylised plants and jewellery were generated on the background. Visitors were able to see different visuals interactively changing and growing according to their movement and their own image together on the one-way mirror. Images of visitors and backgrounds were automatically filmed by cameras installed at booths, and uploaded to <a href=\"http://www.lux25.jp/\" target=\"_blank\">the official website</a> as motion images. RANAGRAM developed the custom software that generated real-time animated visuals and controlled LED lighting, and the remote system that controlled all four booths in sync.",
         "description_ja": "表参道ヒルズで行われた、ヘアケアブランド「LUX」の日本での発売25周年を記念した参加型イベント「Bloom to Shine」のためのインタラクティブ・インスタレーション。66個のマイクロタイルディスプレイ、LEDライティングを使用した4つのブースからインスタレーションを構成しました。Kinectセンサーがブース内の人を感知し、背景のディスプレイに植物やジュエリーをモチーフにした高解像度の3DCGビジュアルを生成します。参加者はハーフミラーで自分の動きにあわせて、インタラクティブに変化・成長する様々なビジュアルと、それと一体化した自分の映像を見ることができます。参加者の画像は、ブース内に設置されたカメラで自動撮影され、<a href=\"http://www.lux25.jp/\" target=\"_blank\">公式サイト</a>にアニメーションイメージとしてアップロードされます。ラナグラムは、ビジュアルをリアルタイムにアニメーションさせる映像生成プログラムと、LEDライティング制御プログラム、全ブースの遠隔・同期コントロールシステムを開発しました。",
         "credits": [
             "Creative Direction: <a href=\"http://www.projector.jp\" target=\"_blank\">Projector</a>",
@@ -155,8 +155,8 @@
     {
         "uid": "ripslyme",
         "date": "11 Dec 2013",
-        "title": ["RIP SLYME TOUR 2013", "DANCE FLOOR MASSIVE Ⅳ"],
-        "toptitle": ["RIP SLYME TOUR 2013", "DANCE FLOOR MASSIVE Ⅳ"],
+        "title": ["RIP SLYME TOUR 2013 “Dance Floor Massive Ⅳ”"],
+        "toptitle": ["RIP SLYME TOUR 2013 “Dance Floor Massive Ⅳ”"],
         "topsize": "large",
         "top_visual": "001.jpg",
         "main_visuals": [
@@ -169,7 +169,7 @@
             {"type": "picture", "path": "008.jpg"},
             {"type": "picture", "path": "009.jpg"}
         ],
-        "description_en": "DANCE FLOOR MASSIVE IV was a nationwide Japan tour of a hip hop group <a href=\"http://www.ripslyme.com/\" target=\"_blank\">RIP SLYME</a> performing 18 gigs in total from October 2013. We created the stage visual in collaboration with <a href=\"http://www.samprasdesign.com/\" target=\"_blank\">SAMPRAS DESIGN</a>. <a href=\"http://www.ripslyme.com/disco/detail.php?media_category_id=3&media_id=58\" target=\"_blank\">DVD & Blu-ray</a> of the live at Zepp DiverCity in Tokyo are on sale.",
+        "description_en": "“Dance Floor Massive Ⅳ” was a nationwide Japan tour of a hip hop group <a href=\"http://www.ripslyme.com/\" target=\"_blank\">RIP SLYME</a> performing 18 gigs in total from October 2013. We created the stage visual in collaboration with <a href=\"http://www.samprasdesign.com/\" target=\"_blank\">SAMPRAS DESIGN</a>. <a href=\"http://www.ripslyme.com/disco/detail.php?media_category_id=3&media_id=58\" target=\"_blank\">DVD & Blu-ray</a> of the live at Zepp DiverCity in Tokyo are on sale.",
         "description_ja": "<a href=\"http://www.ripslyme.com/\" traget=\"_blank\">リップスライム</a>の日本全国ツアー「DANCE FLOOR MASSIVE IV」全１８公演において、<a href=\"http://www.samprasdesign.com/\" target=\"_blank\">サンプラスデザイン</a>と共同で映像演出を担当しました。Zepp DiverCityで行われた東京公演を収録した<a href=\"http://www.ripslyme.com/disco/detail.php?media_category_id=3&media_id=58\" target=\"_blank\">ＤＶＤとブルーレイディスク</a>が発売中です。",
         "technicals": [
             "Software: openFrameworks, Action Script, After Effects"
@@ -213,8 +213,8 @@
     {
         "uid": "harukas",
         "date": "07 Mar 2014",
-        "title": ["Lighting & Audio-visual Installation", "ABENO HARUKAS"],
-        "toptitle": ["Lighting & Audio-visual Installation", "ABENO HARUKAS"],
+        "title": ["Lighting & Audio-visual Installation", "at ABENO HARUKAS"],
+        "toptitle": ["Lighting & Audio-visual Installation", "at ABENO HARUKAS"],
         "topsize": "large",
         "top_visual": "0.jpg",
         "video_id": "89983533",
@@ -252,8 +252,8 @@
     {
         "uid": "pana-wall-osaka",
         "date": "26 April 2013",
-        "title": ["VISION WALL", "Panasonic Center Osaka"],
-        "toptitle": ["VISION WALL", "Panasonic Center Osaka"],
+        "title": ["Vision Wall", "Panasonic Center Osaka"],
+        "toptitle": ["Vison Wall", "Panasonic Center Osaka"],
         "topsize": "large",
         "top_visual": "0.jpg",
         "main_visuals": [
