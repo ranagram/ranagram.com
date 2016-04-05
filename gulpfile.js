@@ -11,6 +11,8 @@ var rename = require("gulp-rename");
 var tumblr = require("tumblr.js");
 
 var PATHS = {
+  data: "./data.json",
+
   jade: [ "src/jade/**/*.jade" ],
   jadeEntry: [ "src/jade/**/!(_)*.jade" ],
   jadeWork: "src/jade/_works.jade",
@@ -62,7 +64,7 @@ var convertMonthToText = function (monthNum) {
 };
 
 gulp.task("jade", function () {
-  var works = require("./data.json");
+  var works = require(PATHS.data);
   return gulp.src(PATHS.jadeEntry)
     .pipe(data(function (file) { return { works: works }; }))
     .pipe(jade({ pretty: true }))
@@ -70,7 +72,7 @@ gulp.task("jade", function () {
     .pipe(gulp.dest(PATHS.htmlDir));
 });
 gulp.task("jade-works", function (cb) {
-  var works = require("./data.json");
+  var works = require(PATHS.data);
   works.map((work) => {
     gulp.src(PATHS.jadeWork)
       .pipe(data(function (file) { return work; }))
@@ -168,5 +170,6 @@ gulp.task("default", function () {
   gulp.watch(PATHS.jade, [ "jade", "jade-works", "jade-progress" ]);
   gulp.watch(PATHS.stylus, [ "stylus" ]);
   gulp.watch(PATHS.jsx, [ "build" ]);
+  gulp.watch(PATHS.data, [ "jade", "jade-works" ]);
 });
 gulp.task("deploy", [ "jade", "jade-works", "jade-progress" ]);
