@@ -64,8 +64,9 @@ var convertMonthToText = function (monthNum) {
 };
 
 gulp.task("jade", function () {
+  var works;
   delete require.cache[ require.resolve(PATHS.data) ];
-  var works = require(PATHS.data);
+  works = require(PATHS.data);
   return gulp.src(PATHS.jadeEntry)
     .pipe(data(function (file) { return { works: works }; }))
     .pipe(jade({ pretty: true }))
@@ -73,8 +74,9 @@ gulp.task("jade", function () {
     .pipe(gulp.dest(PATHS.htmlDir));
 });
 gulp.task("jade-works", function (cb) {
+  var works;
   delete require.cache[ require.resolve(PATHS.data) ];
-  var works = require(PATHS.data);
+  works = require(PATHS.data);
   works.map((work) => {
     gulp.src(PATHS.jadeWork)
       .pipe(data(function (file) { return work; }))
