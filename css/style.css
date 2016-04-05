@@ -152,8 +152,8 @@ select {
 }
 body {
   line-height: 18.700000000000003px;
-  font-size: 17px;
   letter-spacing: 2px;
+  font-size: 16px;
   font-family: 'Source Code Pro', "Osaka-Mono", "ＭＳ ゴシック", "monospace";
   font-weight: 500;
   text-rendering: optimizeLegibility;
