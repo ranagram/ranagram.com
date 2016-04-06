@@ -187,22 +187,35 @@ header nav a {
 header nav a:first-child {
   margin-left: 0;
 }
-header .mark {
+header .marks {
   position: absolute;
   right: 0;
   top: -6px;
   display: block;
+  text-align: right;
 }
-header .mark:hover svg .st0 {
+header .marks a {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-left: 21px;
+}
+header .marks a:hover svg .st0 {
   fill: #6dffe4;
 }
-header .mark svg {
+header .marks a svg {
   display: block;
   width: 32px;
   height: 32px;
 }
-header .mark svg .st0 {
+header .marks a svg .st0 {
   fill: #000;
+}
+header .marks span {
+  display: block;
+  width: 0;
+  height: 0;
+  overflow: hidden;
 }
 ul.works.large li {
   clear: both;

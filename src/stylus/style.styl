@@ -120,8 +120,8 @@ $color_over = #6dffe4
 
 body
   line-height $letter_height_m * 1.1
-  font-size $font_size_m
   letter-spacing $letter_space_m
+  font-size 16px
   font-family 'Source Code Pro', "Osaka-Mono", "ＭＳ ゴシック", "monospace";
   font-weight 500
   text-rendering optimizeLegibility
@@ -150,20 +150,31 @@ header
       margin 0 $font_size_m
       &:first-child
         margin-left 0
-  .mark
+  .marks
     position absolute
     right 0
     top -6px
     display block
-    &:hover
-      svg .st0
-        fill:$color_over
-    svg
+    text-align right
+    a
+      display inline-block
+      vertical-align top
+      text-align left
+      margin-left 21px
+      &:hover
+        svg .st0
+          fill:$color_over
+      svg
+        display block
+        width 32px
+        height 32px
+        .st0
+          fill:#000000
+    span
       display block
-      width 32px
-      height 32px
-      .st0
-        fill:#000000
+      width 0
+      height 0
+      overflow hidden
 
 
 //
