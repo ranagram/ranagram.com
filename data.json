@@ -198,7 +198,7 @@
             {"type": "picture", "path": "1.jpg"},
             {"type": "picture", "path": "2.jpg"}
         ],
-        "description_en": "",
+        "description_en": "We created a set of an interactive wall with small and large monitors at the entrance hall and working area of SoftBank Technology head office. It shows real-time information including general news, weather news, world clocks and press releases with motion graphics. RANAGRAM developed the server-side system (CMS, API) that controls data and constantly changing motion graphics using API of Kyodo News Digital.",
         "description_ja": "ソフトバンク・テクノロジー株式会社（以下、SBT）の本社エントランスホール及び執務エリアへ設置した、大小9つのディスプレイを組み合わせたインタラクティブウォール。ニュース、気象情報、世界時計、プレスリリースなどのリアルタイム情報をモーショングラフィックとして表示しています。ラナグラムは、共同通信社のAPIを使用し、刻一刻と変化する映像のためのデータを統括するサーバーサイドシステム（CMS, API）を開発しました。",
         "credits": [
             "Direction & Visual Design: <a href=\"http://w0w.co.jp/\" target=\"_blank\">WOW Inc.</a>",
