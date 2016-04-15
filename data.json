@@ -17,7 +17,8 @@
         "description_ja": "自分で描いた似顔絵が動くメッセージムービーを作る、ワークショップを企画・開発しました。自由に似顔絵を描き、RANAGRAMが開発した独自のモーションキャプチャーソフトウェアを操作することで、似顔絵が話すムービーを作成することができます。自分の顔に合わせて絵が動くので、好きな表情、言葉を録画、録音することができます。特別な技術は必要なく、どなたでも自由に参加できる企画です。作ったムービーはいつでもスマートフォンやパソコンでご覧できるよう、ウェブへアップロードされます。このワークショップは、今後も様々な場所で開催予定です。",
         "workshop": [
             "Venue: Ikejiri Institute of Design",
-            "Date: Feb 14, 2016."
+            "Date: Feb 14, 2016.",
+            "Project Website: <a href='http://workshop.ranagram.com'>workshop.ranagram.com</a>"
         ],
         "credits": [
             "Designer, Facilitator: Nozomi Shirai",
