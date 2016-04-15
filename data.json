@@ -2,8 +2,8 @@
     {
         "uid": "dcws",
         "date": "2015",
-        "title": ["Digital Craft Workshop at IID"],
-        "toptitle": ["Digital Craft Workshop at IID"],
+        "title": ["Digital Craft Workshop #01"],
+        "toptitle": ["Digital Craft Workshop #01"],
         "topsize": "large",
         "top_visual": "0.jpg",
         "video_id": "156825731",
@@ -13,8 +13,8 @@
             {"type": "picture", "path": "3.jpg"},
             {"type": "picture", "path": "4.jpg"}
         ],
-        "description_en": " ",
-        "description_ja": "自分で描いた似顔絵が動くメッセージムービーを作る、ワークショップを企画・開発しました。自由に似顔絵を描き、RANAGRAMが開発した独自のモーションキャプチャーソフトウェアを操作することで、似顔絵が話すムービーを作成することができます。自分の顔に合わせて絵が動くので、好きな表情、言葉を録画、録音することができます。特別な技術は必要なく、どなたでも自由に参加できる企画です。作ったムービーはいつでもスマートフォンやパソコンでご覧できるよう、ウェブへアップロードされます。このワークショップは、今後も様々な場所で開催予定です。",
+        "description_en": "RANAGRAM plans, develops and organises a workshop of digital technology, Digital Craft Workshop. Participants can casually experience latest digital technologies through handicraft that is activity by hand. We research latest technologies and employ them into every new project, but our work often is often used only for a brief period. We began this workshop because we don’t want make our updated technologies ephemeral and we would like the public to experience them more widely. Digital Craft Workshop continuously provides opportunities in which people feel technologies close.",
+        "description_ja": "RANAGRAMが企画、開発、主催しているデジタルテクノロジー系の物づくりワークショップ。そのシリーズの第一弾として、「自分の表情でうごく – 似顔絵メッセージムービーワークショップ」を開催しました。手書きの似顔絵が画面上で自分の分身となってアニメーションし、気持ちを伝えます。参加者は自由に似顔絵を描き、RANAGRAMが開発した独自フェイストラッキングソフトウェアを操作することで、似顔絵が話すムービーを作成します。自分の顔に合わせて絵が動くので、好きな表情、言葉を録画、録音することができます。作ったムービーはいつでもスマートフォンやパソコンで見られるよう、ウェブへアップロードされます。",
         "workshop": [
             "Venue: Ikejiri Institute of Design",
             "Date: Feb 14, 2016.",
