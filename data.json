@@ -1,5 +1,34 @@
 [
     {
+        "uid": "stbm",
+        "date": "2016",
+        "title": ["Shugo Tokumaru's BRICOLAGE MUSIC"],
+        "toptitle": ["Shugo Tokumaru's BRICOLAGE MUSIC"],
+        "topsize": "large",
+        "top_visual": "0.jpg",
+        "video_id": "",
+        "main_visuals": [
+            {"type": "picture", "path": "1.jpg"},
+            {"type": "picture", "path": "2.jpg"}
+        ],
+        "description_en": "On the release of Shugo Tokumaru’s new album – his own unique songs are internationally acclaimed the world over  RANAGRAM has released BRICOLAGE MUSIC, the composing platform that allows users to participate in his new song making, for iPhone App and the desktop website. Users can post recorded files using the iPhone app and uploading audio files on the desktop website. A posted audio file is trimmed in a metre (approx. 0.5 second) through our automated analysis system. Each posted audio has its own charming animation on the website. Some audio files will be used in the new album of Shugo Tokumaru. We will be organising <a href='http://www.ranagram.com/progress/147229268182/'>our recording workshop</a> using the platform at Ikejiri Institute of Design in Tokyo.",
+        "description_ja": "独自の音楽が国内外で評価されるミュージシャン、トクマルシューゴさんの新作アルバムにあわせて、iPhoneアプリとデスクトップ向けウェブサイトで構成した、ユーザー参加型新曲制作プラットフォーム「BRICOLAGE MUSIC」を公開しました。iPhoneアプリからはマイク録音による投稿、ウェブサイトからは音声ファイルアップロードによる投稿が可能です。投稿した音声は自動解析され、一拍分（約0.5秒間）に切り取られて音楽の一部になります。投稿にはユニークなキャラクターが自動的に割り振られ、愛嬌のあるアニメーションが楽しめます。音声の一部はトクマルシューゴさんの新作アルバムの曲に収録されます。世田谷ものづくり学校で、同システムを使用した<a href='http://www.ranagram.com/progress/147229268182/'>レコーディングワークショップ</a>も開催。",
+        "credits": [
+            "Director: Naoki Sekiguchi",
+            "Art Director: Yuri Yoshikawa (<a href='http://www.ranadesign.com/' target='_blank'>RaNa Design</a>)",
+            "Software Developer: Masahide Yoshida",
+            "Front-end Engineer: Naoki Sekiguchi",
+            "Designer: Nozomi Shirai",
+            "Supervisor: Takashi Aoki",
+            "<br>",
+            "Concept & Planning: <a href='http://www.tonofon.com/' target='_blank'>TONOFON</a>, RANAGRAM"
+        ],
+        "clients": [
+           "<a href='http://www.shugotokumaru.com/' target='_blank'>Shugo Tokumaru</a>, <a href='http://www.tonofon.com/' target='_blank'>TONOFON</a> and <a href='http://p-vine.jp/' target='_blank'>P-VINE</a>."
+        ],
+        "website": {"name": "6th.shugotokumaru.com", "href": "http://6th.shugotokumaru.com/"}
+    },
+    {
         "uid": "dcws",
         "date": "2015",
         "title": ["Digital Craft Workshop #01"],
