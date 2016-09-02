@@ -1,6 +1,7 @@
 extends ../_base
 
 block script_before
+  meta(name="format-detection" content="telephone=no")
   script(src="http://maps.google.com/maps/api/js?sensor=false")
 
 block content
@@ -33,9 +34,12 @@ block content
       li 401 3-3-32 Sendagaya, Shibuya, Tokyo
         br
         | 151-0051 JAPAN
-      li P: +81(0)3 6890 0775
+      li
+        = 'P: '
+        a(href="tel:0368900775") +81(0)3 6890 0775
       li F: +81(0)3 6890 0776
-      li M:
+      li
+        = 'M: '
         a(href!="mailto:info&#64;ranagram.com") info&#64;ranagram.com
 
   section.group
