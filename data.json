@@ -5,9 +5,9 @@
         "title": ["Shugo Tokumaru's BRICOLAGE MUSIC"],
         "toptitle": ["Shugo Tokumaru's BRICOLAGE MUSIC"],
         "topsize": "large",
-        "top_visual": "0.jpg",
         "video_id": "182046605",
         "main_visuals": [
+            {"type": "picture", "path": "0.jpg"},
             {"type": "picture", "path": "1.jpg"},
             {"type": "picture", "path": "2.jpg"}
         ],
