@@ -25612,7 +25612,7 @@
 	  _createClass(AppAbout, [{
 	    key: "componentDidMount",
 	    value: function componentDidMount() {
-	      var myLatlng = new google.maps.LatLng(35.67665, 139.70555);
+	      var myLatlng = new google.maps.LatLng(35.679132, 139.706528);
 	      var centerLatlng = new google.maps.LatLng(myLatlng.lat() + 0.0004, myLatlng.lng());
 	      var myOptions = {
 	        zoom: 16,
