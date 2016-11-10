@@ -15,8 +15,8 @@
 				height: 100%;
 				line-height: 0;
 			}
-
 			#container {
+				width: 100%;
 				position: fixed;
 				left: 0;
 				top: 0;
@@ -56,17 +56,27 @@
 				-webkit-transform: rotate(2deg);
 				transform: rotate(2deg);
 			}
+			#line5 {
+				text-align: center;
+				margin-top: 1%;
+				-webkit-transform: rotate(-3deg);
+				transform: rotate(-3deg);
+			}
 		</style>
 	</head>
 	<body>
-
 		<div id="container"></div>
 		<div id="lines">
-			<div class="line" id="line1"><img src="svgs/open-office-line1.svg" alt="RANAGRAM" width="75%" /></div>
+			<div class="line" id="line1"><a href="http://www.ranagram.com/" target="_blank"><img src="svgs/open-office-line1.svg" alt="RANAGRAM" width="75%" /></a></div>
 			<div class="line" id="line2"><img src="svgs/open-office-line2.svg" alt="OPEN OFFICE" width="73.98%" /></div>
 			<div class="line" id="line3"><img src="svgs/open-office-line3.svg" alt="2016.11.14 MON - 25 FRI" width="69.64%" /></div>
 			<div class="line" id="line4"><img src="svgs/open-office-line4.svg" alt="6PM - 8PM" width="34.28%" /></div>
+			<div class="line" id="line5"><a href="https://goo.gl/maps/qQMn9tYFANK2" target="_blank"><img src="svgs/open-office-line5.svg" alt="Map" width="18.48%" /></a></div>
 		</div>
+		<script
+  src="https://code.jquery.com/jquery-1.12.4.min.js"
+  integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+  crossorigin="anonymous"></script>
 		<script src="js/three.min.js"></script>
 		<script id="vertexShader" type="x-shader/x-vertex">
 
@@ -80,7 +90,6 @@
 
 		<script id="fragmentShader" type="x-shader/x-fragment">
 
-			uniform vec2 resolution;
 			uniform vec2 bias0;
 			uniform vec2 bias1;
 			uniform vec2 bias2;
@@ -221,8 +230,14 @@
 
 			var uniforms;
 
-			init();
-			animate();
+			if(document.createElement('canvas').getContext('webgl') != null) {
+				init();
+				animate();
+			} else {
+				$('#container').css({'padding-top' : '177.78%'});
+				$('#container').css({'background' : 'url("img/bg.png") 0 0 no-repeat'});
+				$('#container').css({'background-size' : 'contain'});
+			}
 
 			function init() {
 
@@ -236,7 +251,6 @@
 				var geometry = new THREE.PlaneBufferGeometry( 2, 2 );
 
 				uniforms = {
-					resolution: { value: new THREE.Vector2() },
 					bias0:       { value: new THREE.Vector2() },
 					bias1:       { value: new THREE.Vector2() },
 					bias2:       { value: new THREE.Vector2() },
@@ -267,7 +281,6 @@
 				scene.add( mesh );
 
 				renderer = new THREE.WebGLRenderer();
-				renderer.setPixelRatio( window.devicePixelRatio );
 				container.appendChild( renderer.domElement );
 
 				onWindowResize();
@@ -279,9 +292,6 @@
 			function onWindowResize( event ) {
 
 				renderer.setSize( window.innerWidth, window.innerHeight );
-
-				uniforms.resolution.value.x = renderer.domElement.width;
-				uniforms.resolution.value.y = renderer.domElement.height;
 
 			}
 
