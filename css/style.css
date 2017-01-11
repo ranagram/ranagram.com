@@ -295,7 +295,7 @@ ul.works.small p {
 }
 .work .info {
   margin: 17px 0 17px;
-  border: solid 1px #000;
+  border: solid 4px #000;
   padding: 25.5px 24px 34px;
 }
 .work .info >h1 {
@@ -401,13 +401,13 @@ header+.progress {
 }
 .progress {
   margin-top: 17px;
-  border: solid 1px #000;
+  border: solid 4px #000;
   padding: 25.5px 24px 17px;
 }
 .progress .date {
   margin-top: 17px;
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 700;
+  font-size: 17px;
   letter-spacing: 2px;
   line-height: 30.6px;
 }
@@ -450,6 +450,10 @@ header+.progress {
 #map_canvas {
   width: 840px;
   height: 472px;
+}
+.studio img {
+  margin-top: 20px;
+  width: 840px;
 }
 .concept {
   font-size: 17px;
